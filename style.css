@@ -404,7 +404,7 @@ h3 {
 } */
 
 #intro.section {
-  background: linear-gradient(135deg, #1d0073, #0269ae, #05a7ff, #00d7f3); /* Initial gradient colors */
+  background: linear-gradient(135deg, #1d0073, #0269ae, #05a7ff,  #00d7f3, #ef228f); /* Initial gradient colors */
   background-size: 300% 300%;
   animation: gradientAnimation 12s ease infinite;
   position: relative;

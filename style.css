@@ -351,13 +351,14 @@ ul.side-nav.fixed li.logo a {
 
 ul.table-of-contents li:not(.logo) a.active,
 ul.table-of-contents li:not(.logo) a:hover {
-  background-color: #0a4a9e;
+  background-color: #ac13e4;
   border-left: 3px solid;
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
 ul#slide-out li:not(.logo) a span {
-  color: #333 !important;
+  color: #fffafa !important;
+  font-size: 17px;
 }
 
 li.logo span {

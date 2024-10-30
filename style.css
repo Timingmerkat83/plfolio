@@ -286,6 +286,10 @@ dt {
 }
 
 ul.side-nav {
+  background: linear-gradient(217deg, rgba(162, 147, 147, 0.8), rgba(255,0,0,0) ),
+            linear-gradient(127deg, rgba(7, 84, 166, 0.8), rgba(0,255,0,0) ),
+            linear-gradient(336deg, rgba(133, 3, 117, 0.8), rgba(0,0,255,0) );
+  color: white;
   width: 190px;
 }
 

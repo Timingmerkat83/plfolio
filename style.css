@@ -1,3 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #02337c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a5b5b;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 0.5s ease forwards; /* Smooth fade-in effect */
+}
+
+/* Apply transition to all elements for smooth interaction */
+* {
+  -webkit-transition: all 0.3s ease; /* Universal transition */
+}
+
 .profile-pic {
   position: relative;
   max-width: 130px;
@@ -13,11 +50,13 @@
   margin-left: -7px;
   border: 6px solid rgba(0, 77, 64, 0.4);
   border-radius: 50% !important;
+  -webkit-transform: translateZ(0); /* Enable GPU rendering */
 }
 
 .profile-pic img {
   width: 100%;
   height: auto;
+  -webkit-transition: transform 0.3s ease;
 }
 
 .tracker {
@@ -26,6 +65,7 @@
   /* margin-inline-end: auto;  */
   bottom: 0;
   right: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
@@ -49,6 +89,8 @@
   display: inline-block;
   margin: 4px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  -webkit-appearance: none; /* Remove default styling */
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow */
 }
 
 .icon-btn:hover {
@@ -125,10 +167,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+ .readme:hover{
   color: white;
-  background-color: #00796b;
-} */
+  background-color: #003979;
+} 
 
 .contactme {
   position: relative;
@@ -146,8 +188,8 @@
 }
 
 .contactme:hover {
-  color: #036bc5;
-  background-color: rgb(41, 56, 112);
+  color: #6caee8;
+  background-color: rgb(79, 41, 112);
 }
 /* main body */
 
@@ -197,13 +239,11 @@ nav {
   background: #0b3d91;
   box-shadow: none;
   height: 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* nav {
-  background: rgb(149, 126, 212);
-  box-shadow: none;
-  height: 0;
-} */
 
 nav i {
   padding: 0 15px;
@@ -410,7 +450,14 @@ h3 {
 
 .card {
   margin-bottom: 60px;
-  
+  border-radius: 10px;
+  background-color: rgb(237, 237, 234);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card .role {
@@ -532,6 +579,12 @@ a.hoverline:hover {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+  transition: transform 0.1s ease, box-shadow 1s ease;
+}
+
+img.responsive-img:hover {
+  transform: scale(1.4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card.large .card-content p {

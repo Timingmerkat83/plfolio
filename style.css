@@ -307,7 +307,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: #0277bd;
+  color: #2eaff9;
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -645,7 +645,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #4801ed !important;
 }
 
 /* .teal-text {
@@ -655,7 +655,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #0ac2ff !important;
 }
 
 /* .teal {
@@ -699,7 +699,7 @@ small {
   }
   nav a.button-collapse,
   nav a.button-collapse i {
-    color: #009688;
+    color: #7462ff;
     height: 56px;
     line-height: 56px;
   }

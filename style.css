@@ -135,9 +135,12 @@ html {
   color: #1877f2;
 }
 
+
 .facebook:hover {
   background-color: #1877f2;
 }
+
+
 
 .linkedin:hover {
   background-color: #0077b5;
@@ -150,7 +153,13 @@ html {
 .github:hover {
   background-color: black;
 }
+.vimeo {
+  color: #1ab7ed; /* Vimeo's color */
+}
 
+.vimeo:hover {
+  background-color: #1ab7ed; /* Change background on hover */
+}
 /* Buttons - Read Me, Contact Us */
 
 .readme {

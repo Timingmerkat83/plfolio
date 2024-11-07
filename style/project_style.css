@@ -7,4 +7,12 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for better visibility */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition effects */
     overflow: hidden;
+    margin: 16px;
+  }
+
+  .tools_container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
   }

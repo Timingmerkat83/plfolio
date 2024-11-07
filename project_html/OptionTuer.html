@@ -6,14 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
+  </script>
   <!-- End Google Tag Manager -->
 
   <!-- Materialize - Compiled and minified CSS-->
@@ -30,7 +38,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-126939217-2');
@@ -66,13 +77,13 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
       style="display:none;visibility:hidden"></iframe>
   </noscript>
-<div id="loading-screen">
-  <div class="loader"></div> <!-- Loader spinner -->
-  <h1>Loading...</h1>
-</div>
+  <div id="loading-screen">
+    <div class="loader"></div> <!-- Loader spinner -->
+    <h1>Loading...</h1>
+  </div>
 
 
-<!-- Navigation Menu-->
+  <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
@@ -85,13 +96,13 @@
       </li>
 
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the About section" href="/index.html" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>À Propos</span></a>
       </li>
       <li class="bold">
         <!-- mdi-av-web small
              mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Projects section" href="/index.html" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projets</span></a>
       </li>
 
@@ -128,7 +139,8 @@
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Option de Tuer</a><span class="black-text">Jeu web intéractif</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Option de Tuer</a><span
+        class="black-text">Jeu web intéractif</span>
     </div>
   </nav>
 
@@ -136,7 +148,7 @@
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the About section" href="/index.html" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>À Propos</span></a>
       </li>
 
@@ -170,17 +182,35 @@
     <section>
       <article>
         <h3 class="page-title white-text Green">Infos</h3>
-          Infos
+        Infos
         </h3>
         <h4>Description</h4>
+        <p>
+          Histoire web intéractif:  Vous incarnez Bonnie Parker, jeune agente maladroite mais talentueuse, cherche à venger la mort de
+          ses parents en traquant le Professeur Crâne, un criminel menaçant des millions de vies. Elle reçoit une
+          mission cruciale : le retrouver et décider de son sort. Partagée entre la vengeance et la justice, Bonnie doit
+          affronter ses démons pour sauver des innocents.
+        </p>
+        <h4>Outils</h4>
+        <div class="tools_container">
+          <div class="col s4 m2">
+            <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="/assets/img/javascript.png" class="responsive-img" />JavaScript
+          </div>
+        </div>
       </article>
     </section>
   </main>
-  
+
   <!-- typed.js -->
 
 
-  
+
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 

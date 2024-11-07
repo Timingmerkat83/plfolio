@@ -1,4 +1,10 @@
 
+body, html{
+  background:;
+  display: flex;
+  justify-content: center;
+}
+
 iframe {
     width: 85vw;
     height: 80vh;
@@ -15,4 +21,9 @@ iframe {
     align-items: center;
     flex-direction: row;
     width: 85%;
+  }
+
+  video{
+    border-radius: 15px;
+
   }

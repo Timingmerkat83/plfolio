@@ -24,6 +24,8 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/style/style.css" />
   <link rel="stylesheet" href="/style/project_style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Pierre-Luc Proulx | Portfolio</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,9 +62,14 @@
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
   <style>
-    body, html{
-      background: src()
-    }
+body{
+  background: url("/assets/img/darkwall.jpg") ;
+  background-repeat:repeat-x;
+  backdrop-filter:unset;
+  background-size: cover;
+  background-position: fixed;
+}
+    
   </style>
 </head>
 
@@ -101,25 +108,13 @@
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
         <a aria-label="Navigate to the Skills section" href="/index.html#skills" class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Compétences</span></a>
       </li>
       <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
         <a aria-label="Navigate to the Contact section" href="/index.html#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
+        </li>
       <li class="bold">
         <a aria-label="Open Varad's resume in a new tab"
           href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view?usp=drive_link" target="_blank"
@@ -127,7 +122,6 @@
       </li>
     </ul>
   </nav>
-
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
@@ -136,8 +130,6 @@
       <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Cyber Détective</a><span class="black-text">Projet Photoshop</span>
     </div>
   </nav>
-
-  
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
@@ -167,7 +159,79 @@
   </nav>
   <main>
     <section>
-
+      <h1>Cyber Detective</h1>
+    </section>
+    <section>
+      <div class="carousel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Intro.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/GrosPlan.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Jacques Use.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Kelly Diotte.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Personnages.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/meutre.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Investigation.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Ordi.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Kelly&JacquesBureau.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Inspecteur 2.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Kelly Bureau.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single">
+                <img src="/assets/img/projects/CyberDetective/Plan de travail 1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3 class="page-title white-text Green">Infos</h3>
+        <h4>Description</h4>
     </section>
   </main>
   <!-- jQuery-->
@@ -188,6 +252,8 @@
     })
   </script>
   <script src="/script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/script/swiper.js"></script>
 </body>
 
 </html>

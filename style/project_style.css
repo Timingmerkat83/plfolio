@@ -26,3 +26,51 @@ iframe:not(.game) {
     border-radius: 15px;
 
   }
+
+  .carousel {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    width: 90%;  /* Ensure carousel takes full width */
+    margin-left: 86px; /* Adjust to the width of your side navbar if needed */
+  }
+  
+  .swiper {
+   
+    overflow: visible;
+    width: 100vw;
+    margin-left: 0; /* Ensure no unwanted margin */
+  }
+  
+  .swiper .swiper-slide {
+    width: 1080px; /* You can adjust this value as per your requirement */
+    flex-shrink: 0; /* Prevent slide from shrinking */
+    max-width: 100%; /* Prevent slide from exceeding available space */
+    
+  }
+  
+  .single {
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  .single img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .carousel {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .swiper .swiper-slide {
+      width: 100%;
+    }
+  }

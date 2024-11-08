@@ -1,11 +1,10 @@
 
 body, html{
-  background:;
   display: flex;
   justify-content: center;
 }
 
-iframe {
+iframe:not(.game) {
     width: 85vw;
     height: 80vh;
     border: none; /* Optional: remove border around iframe */

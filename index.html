@@ -21,9 +21,10 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <link rel="icon" type="image/x-icon" href="assets/LogoPL.ico">
   <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5ZCD5uc+t7jY5c+76y0jR6xreKg0/MaS8lLRWTOk4h/DKT5I5eyEzPsTInb3k9lQ" crossorigin="anonymous">
+<link rel="stylesheet" href="style/style.css">
   <!-- Custom Styles-->
-  <link rel="stylesheet" href="style/style.css" />
+
   <title>Pierre-Luc Proulx | Portfolio</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,11 +42,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Pierre-Luc| Software Developer" />
   <meta property="og:description" content="Software Developer" />
-  <meta property="og:url" content="https://varadbhogayata.github.io/" />
-  <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
-  <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
-  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="" />
   <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
@@ -266,233 +262,148 @@
       </div>
     </section>
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
+    <section id="projects" class="section scrollspy mx-5">
       <h3 class="page-title white-text green">Mes projets</h3>
       <div class="container">
         <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card large" onclick="window.location.href='project_html/CyberDetective.html'">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="window.location.href='project_html/CyberDetective.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="assets/img/projects/CyberDetective.png"
-                  style="height: 100%; width: 100%" class="activator" />
+                <img alt="music streaming app" src="assets/img/projects/CyberDetective.png" style="height: 100%; width: 100%" class="card-img-top" />
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Cyber Détective<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Projet de générique de film d'introduction qui est une série d'images créées avec Adobe Photoshop
-                </p>
+              <div class="card-body">
+                <span class="card-title activator teal-text hoverline">Cyber Détective<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Projet de générique de film d'introduction avec Adobe Photoshop</p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title grey-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Adobe Illustrator, PowerPoint, Adobe Photoshop</li>
-
-
+                  <li><b>Outils:</b> Adobe Illustrator, PowerPoint, Adobe Photoshop</li>
                 </ul>
                 <div class="card-action">
-
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://ca.pinterest.com/Pierreskate14/portfolio/cyber-d%C3%A9tective/" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-pinterest"></i></a>
+                  <a href="https://ca.pinterest.com/Pierreskate14/portfolio/cyber-d%C3%A9tective/" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-pinterest"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium" onclick="window.location.href='project_html/OptionTuer.html'">
+    
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="window.location.href='project_html/OptionTuer.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="assets/img/projects/decision de tuer.png" style="height: 100%; width: 100%"
-                  class="activator" />
+                <img alt="quiz app" src="assets/img/projects/decision de tuer.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Option de tuer<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  - Histoire interactif Web
-                </p>
+                <span class="card-title activator teal-text hoverline">Option de tuer<i class="mdi-navigation-more-vert right"></i></span>
+                <p>- Histoire interactive Web</p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title grey-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Outils:</b>HTML, CSS, Javascript, Github</li>
-                  <li>Jouer le jeu ou aller voir le répertoire Github</li>
-
+                  <li><b>Outils:</b> HTML, CSS, Javascript, GitHub</li>
+                  <li>Jouez le jeu ou allez voir le répertoire GitHub</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://timingmerkat83.github.io/Vous-etes-le-heros-Option-de-tuer/"
-                    target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                  <a href="https://timingmerkat83.github.io/Vous-etes-le-heros-Option-de-tuer/" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-external-link"></i></a>
+                  <a href="https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card large" onclick="window.location.href='project_html/Encretit.html'">
+    
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="window.location.href='project_html/Encretit.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="assets/img/projects/encretit.jpg"
-                  style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of web app" src="assets/img/projects/encretit.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Encretit<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  -Projet de création d'un personnage 3D avec <b>MAYA</b> <br> - Modélisation, rigging et texturing
-                  réalisés, surmontant des défis de textures.<br> - Rendu final mettant en avant mes compétences en
-                  animation et design
-                </p>
+                <span class="card-title activator teal-text hoverline">Encretit<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Projet de création d'un personnage 3D avec Maya</p>
               </div>
               <div class="card-reveal">
-
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title teal-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
                   <li><b>Outils:</b> StoryBoarder, Maya</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
-
                 </ul>
                 <div class="card-action">
-
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://www.behance.net/gallery/211193957/Encretit-%28cration-dun-personnage%29"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-behance"></i></a>
+                  <a href="https://www.behance.net/gallery/211193957/Encretit-%28cration-dun-personnage%29" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-behance"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- VQA -->
-          <div class="col s16 m4 l4">
-            <div class="card large" onclick="window.location.href='project_html/LogoGagnant.html'">
+    
+          <!-- Card 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="window.location.href='project_html/LogoGagnant.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/projects/Logo timFinal.png"
-                  style="height: 100%; width: 100%" class="card-img-top activator" />
+                <img alt="Screenshot of web app" src="assets/img/projects/Logo timFinal.png" style="height: 100%; width: 100%" class="card-img-top activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Logo TIM gagnant<i
-                    class="mdi-navigation-more-vert right"></i></span>
-
+                <span class="card-title activator teal-text hoverline">Logo TIM gagnant<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title teal-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>- Concours conception de logo du programme Technique d'intégration multimédia</li>
-                  <li>Logo gagnant.</li>
-
+                  <li>Concours de conception de logo du programme TIM</li>
+                  <li>Logo gagnant</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://ca.pinterest.com/pin/549368854565867445/" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-pinterest"></i></a>
+                  <a href="https://ca.pinterest.com/pin/549368854565867445/" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-pinterest"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Video Summarizer -->
-          <div class="col s12 m6 l4">
+    
+          <!-- Card 5 -->
+          <div class="col-md-4 mb-4">
             <div class="card medium" onclick="window.location.href='project_html/HommeMetro.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/projects/hommemetro.png"
-                  style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of web app" src="assets/img/projects/hommemetro.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">L'homme du metro<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Une animation 2D créée avec l'aide d'adobe After Effects se déroulant dans un metro dans un style
-                  pixel
-                </p>
+                <span class="card-title activator teal-text hoverline">L'homme du metro<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Une animation 2D dans un style pixel avec After Effects</p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title brown-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
                   <li>Outils: After Effects, Adobe, StoryBoarder, Adobe Illustrator</li>
-
                 </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://www.behance.net/gallery/211068119/Lhomme-du-Metro" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-behance"></i></a>
+                  <a href="https://www.behance.net/gallery/211068119/Lhomme-du-Metro" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-behance"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Image Generator -->
-          <div class="col s12 m6 l4">
+    
+          <!-- Card 6 -->
+          <div class="col-md-4 mb-4">
             <div class="card medium" onclick="window.location.href='project_html/DrunkZombieSurvivor.html'">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="zombiedrunk.gif" style="height: 100%; width: 100%"
-                  class="activator" />
+                <img alt="Screenshot of web app" src="zombiedrunk.gif" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Drunk Zombie Survivor<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Jeux 3D réalisé avec Unity
-                </p>
+                <span class="card-title activator teal-text hoverline">Drunk Zombie Survivor<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Jeux 3D réalisé avec Unity</p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title brown-text"><small>Accomplissements</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Tirer sur des zombies tout en collectant de la bière ne mourrez pas!</li>
-                  <li>Cliquer sur le boutton ci-dessous pour aller télécharger le jeu</li>
-
+                  <li>Tirer sur des zombies tout en collectant de la bière</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://cmontmorency365-my.sharepoint.com/:u:/r/personal/lora_boisvert_cmontmorency_qc_ca/Documents/Documents/VR/Remises/2024/02_exercices/pl_proulx_travail02_582434_MO.zip?csf=1&web=1&e=yk8we1"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-sharepoint"></i></a>
+                  <a href="https://cmontmorency365-my.sharepoint.com/:u:/r/personal/lora_boisvert_cmontmorency_qc_ca/Documents/Documents/VR/Remises/2024/02_exercices/pl_proulx_travail02_582434_MO.zip?csf=1&web=1&e=yk8we1" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-download"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-
-
-          <!-- ************* -->
+    
         </div>
       </div>
     </section>
+    
 
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text purple">Compétences</h3>
@@ -634,10 +545,10 @@
       backSpeed: 40
     });
   </script>
-
-
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzW8MOo2Hj+HE7bgWABcDsEZktCw7Fv8ULFqbdp3pUJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-QY6rEGLD1B4/LSY+7jTHFZZhI76nZOD9An5eBI27W4GLVi1xZkAaJRA8ujU6H3y0" crossorigin="anonymous"></script>
 
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>

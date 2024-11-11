@@ -1,3 +1,7 @@
+:root{
+  --PLblue: rgb(3, 142, 241);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -428,14 +432,15 @@ h3 {
 }
 
 .section {
-  padding-bottom: 30px;
+  
+  padding-bottom: 2px;
   padding-top: 0;
   position: relative;
   font-weight: bolder;
 }
 
 .full-height {
-  height: 100vh;
+  height: 80vh;
 }
 
 /* Original */
@@ -446,10 +451,20 @@ h3 {
 } */
 
 #intro.section {
+  
   background: linear-gradient(135deg, #1d0073, #0269ae, #05a7ff,  #00d7f3, #ef228f); /* Initial gradient colors */
   background-size: 300% 300%;
   animation: gradientAnimation 12s ease infinite;
   position: relative;
+}
+
+
+#intro .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 @keyframes gradientAnimation {
@@ -459,24 +474,26 @@ h3 {
 }
 
 #intro.section .container {
-  color: rgb(90, 164, 255);
-  font-weight: 200;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
   left: 0;
   position: absolute;
   top: 0;
 }
 
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Prend la pleine hauteur de la page */
+  position: relative;
+}
+
 
 #intro.section .container *:not(span) {
   font-weight: 300;
   /* font-weight: 400; */
-  line-height: 150%;
+  line-height: 100%;
   /* padding: 0 0px; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -490,12 +507,13 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Superpose un voile foncé */
+
 }
 
 .waves-effect.waves-blue .waves-ripple {
@@ -842,4 +860,23 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer{
+  margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+  color: var(--PLblue);
 }

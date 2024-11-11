@@ -75,6 +75,10 @@ video {
   justify-content: center;
 }
 
+.card#project{
+  width: 50vw;
+}
+
 .project-description{
   width: 50vw;
   text-align: left;

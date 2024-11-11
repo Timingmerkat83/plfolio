@@ -864,13 +864,30 @@ small {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Espacement entre les cartes */
+  align-items: start;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 2px; /* Espacement entre les cartes */
 }
 
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 3 / 2 / 4;}
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+
+/* Disposition mobile */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Une seule colonne */
+    grid-template-rows: auto;   /* Ajuste automatiquement la hauteur de chaque ligne */
+  }
+
+  .div1, .div2, .div3 {
+    grid-area: auto; /* Positionnement automatique en colonne */
+  }
+  .logo{
+    width: 500px;
+    text-align: center;
   }
 }
 

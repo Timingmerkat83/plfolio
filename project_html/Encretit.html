@@ -24,6 +24,8 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/style/style.css" />
   <link rel="stylesheet" href="/style/project_style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <title>Pierre-Luc Proulx | Portfolio</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -36,6 +38,20 @@
     gtag('config', 'UA-126939217-2');
   </script>
 
+  <style>
+    body,
+    html {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      background-color: black;
+    }
+
+    h1 {
+      padding: 15px;
+      font-size: 50px;
+    }
+  </style>
 
   <meta name="description"
     content="Software Developer with a passion for backend development and artificial intelligence." />
@@ -66,13 +82,12 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
       style="display:none;visibility:hidden"></iframe>
   </noscript>
-<div id="loading-screen">
-  <div class="loader"></div> <!-- Loader spinner -->
-  <h1>Loading...</h1>
-</div>
+  <div id="loading-screen">
+    <div class="loader"></div> <!-- Loader spinner -->
+    <h1>Loading...</h1>
+  </div>
 
-
-<!-- Navigation Menu-->
+  <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
@@ -85,34 +100,26 @@
       </li>
 
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>À Propos</span></a>
+        <a aria-label="Navigate to the About section" href="/index.html#about"
+          class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>À Propos</span></a>
       </li>
       <li class="bold">
         <!-- mdi-av-web small
              mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Projects section" href="/index.html#projects"
+          class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projets</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="/index.html" class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Skills section" href="/index.html#skills"
+          class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Compétences</span></a>
       </li>
       <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="/index.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+
+        <a aria-label="Navigate to the Contact section" href="/index.html#contact"
+          class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
 
       <li class="bold">
@@ -123,34 +130,39 @@
     </ul>
   </nav>
 
+
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Nom du projet</a><span class="black-text">Type de projet</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Encretit</a><span
+        class="black-text">Création d'un personnage 3D</span>
     </div>
   </nav>
+
 
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="/index.html"  class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>À Propos</span></a>
+        <a aria-label="Navigate to the About section" href="/index.html#about"
+          class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>À Propos</span></a>
       </li>
 
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="/index.html" class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Projects section" href="/index.html#projects"
+          class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projets</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="/index.html" class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Skills section" href="/index.html#skills"
+          class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Compétences</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="/index.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contacter</span></a>
+        <a aria-label="Navigate to the Contact section" href="/index.html#contact"
+          class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small"></i><span>Contacter</span></a>
       </li>
       <li class="bold">
         <a aria-label="Open Pierre-Luc Proulx Resume in a new tab"
@@ -159,11 +171,86 @@
       </li>
     </ul>
   </nav>
-  
-  <!-- typed.js -->
 
+  <main>
+    <h1>Encretit - Création d'un personnage</h1>
+    <section>
+      <!--Iframe du modèle 3D-->
+      <div class="sketchfab-embed-wrapper"> <iframe title="Encretit" frameborder="0" allowfullscreen
+          mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+          src="https://sketchfab.com/models/5f155d07b23b4cfe9489d4664ddd98f4/embed"> </iframe>
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a
+            href="https://sketchfab.com/3d-models/encretit-5f155d07b23b4cfe9489d4664ddd98f4?utm_medium=embed&utm_campaign=share-popup&utm_content=5f155d07b23b4cfe9489d4664ddd98f4"
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Encretit </a> by <a
+            href="https://sketchfab.com/pierrelucproulx?utm_medium=embed&utm_campaign=share-popup&utm_content=5f155d07b23b4cfe9489d4664ddd98f4"
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> pierrelucproulx </a> on <a
+            href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=5f155d07b23b4cfe9489d4664ddd98f4"
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+      </div>
+    </section>
+    <section>
+      <h3 class="page-title white-text blue-grey">Processus</h3>
+      <div class="image-grid">
+        <div class="image-item"><img src="/assets/img/projects/Encretit/moodboard.png" alt="Image 1"></div>
+        <div class="image-item"><img src="/assets/img/projects/Encretit/croquis.png" alt="Image 2"></div>
+        <div class="image-item"><img src="/assets/img/projects/Encretit/croquis2.png" alt="Image 3"></div>
+        <div class="image-item"><img src="/assets/img/projects/Encretit/encretit1.jpg" alt="Image 4"></div>
+        <div class="image-item"><img src="/assets/img/projects/Encretit/encretit2.jpg" alt="Image 5"></div>
+        <div class="image-item"><img src="/assets/img/projects/Encretit/encretit3.jpg" alt="Image 6"></div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h3 class="page-title white-text green">Description</h3>
+      <div class="project-description">
+        <div class="container flow-text">
+        <p style="font-size: 30px; line-height: 3rem">
+          Modélisation complète d'un personnage original avec les matériaux, UV, squelette (rig) et skinning.  
+        </p>
+        <br><br><br>
+        <blockquote style="color:aliceblue">
+          <h4>Synopsis</h4>
+          L’espèce humaine est en voie d’extinction après une terrible catastrophe naturelle a rasé la planète Terre
+          entière. Une nouvelle créature dont son origine est inconnue rentre dans le décor après ces événements, cette
+          espèce faite à base d’encre que l’on appelle « Encretit » est sur le point de marquer une nouvelle génération
+          sur Terre.
+        </blockquote>
+      </div>
+      <section class="softwares">
+        <div class="card" id="project">
+          <div class="card-content">
+            <h4 class="brown-text light" style="text-align: center;">Compétences utilisés</h4>
+            <div class="row text-center">
+              <div class="align-competences">
+                <img src="/assets/img/blender.png" alt class="competence-img">
+                <img src="/assets/img/maya.png" alt class="competence-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        </p>
+      </div>
+    </section>
 
-  
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="modal-image" src="" alt="Full-screen image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -181,6 +268,9 @@
       })
     })
   </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="/script.js"></script>
 </body>
 

@@ -1,3 +1,8 @@
+:root{
+  --PLblue: rgb(3, 142, 241);
+  --darkgray: rgb(30, 30, 30);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -73,7 +78,10 @@ html {
 * {
   -webkit-transition: all 0.3s ease; /* Universal transition */
 }
-
+.mx-5 {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+}
 .profile-pic {
   position: relative;
   max-width: 130px;
@@ -114,6 +122,7 @@ html {
   text-align: inherit;
   /* padding: 10px; */
 }
+
 
 .icon-btn {
   margin-left: auto;
@@ -246,7 +255,7 @@ html {
 /* body-color */
 
 body {
-  color: #333;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -317,7 +326,7 @@ nav i:hover {
 } */
 
 main {
-  background: url(assets/img/bg.png) ;
+  background: url(/assets/img/bg.png) ;
   padding-left: 190px;
 }
 
@@ -337,9 +346,9 @@ dt {
 }
 
 ul.side-nav {
-  background: linear-gradient(217deg, rgba(162, 147, 147, 0.8), rgba(255,0,0,0) ),
-            linear-gradient(127deg, rgba(7, 84, 166, 0.8), rgba(0,255,0,0) ),
-            linear-gradient(336deg, rgba(133, 3, 117, 0.8), rgba(0,0,255,0) );
+  background: linear-gradient(217deg, rgba(162, 147, 147, 1), rgba(255,0,0,0) ),
+            linear-gradient(127deg, rgba(7, 84, 166, 0.8), rgb(0, 81, 255) ),
+            linear-gradient(336deg, rgba(3, 12, 133, 0.8), rgb(0, 0, 255) );
   color: white;
   width: 190px;
 }
@@ -416,7 +425,7 @@ li.logo span {
 }
 
 .container {
-  width: 95%;
+  width: 100vw;
 }
 
 h3 {
@@ -428,14 +437,15 @@ h3 {
 }
 
 .section {
-  padding-bottom: 30px;
+  
+  padding-bottom: 2px;
   padding-top: 0;
   position: relative;
   font-weight: bolder;
 }
 
 .full-height {
-  height: 100vh;
+  height: 80vh;
 }
 
 /* Original */
@@ -446,10 +456,20 @@ h3 {
 } */
 
 #intro.section {
+  
   background: linear-gradient(135deg, #1d0073, #0269ae, #05a7ff,  #00d7f3, #ef228f); /* Initial gradient colors */
   background-size: 300% 300%;
   animation: gradientAnimation 12s ease infinite;
   position: relative;
+}
+
+
+#intro .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 @keyframes gradientAnimation {
@@ -459,24 +479,26 @@ h3 {
 }
 
 #intro.section .container {
-  color: rgb(90, 164, 255);
-  font-weight: 200;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
   left: 0;
   position: absolute;
   top: 0;
 }
 
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Prend la pleine hauteur de la page */
+  position: relative;
+}
+
 
 #intro.section .container *:not(span) {
   font-weight: 300;
   /* font-weight: 400; */
-  line-height: 150%;
+  line-height: 100%;
   /* padding: 0 0px; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -490,12 +512,13 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Superpose un voile foncé */
+
 }
 
 .waves-effect.waves-blue .waves-ripple {
@@ -504,55 +527,124 @@ h3 {
   background-color: rgba(33, 150, 243, 0.2);
 }
 
+
+/* Dark Mode Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 20px; /* Add space between cards */
+  padding: 20px; /* Padding around the grid */
+  justify-items: center; /* Center cards in each grid item */
+  background-color: #181818;  /* Dark background for the grid */
+  border-radius: 1cm;
+}
+
+/* Card Styling */
 .card {
-  margin-bottom: 60px;
-  border-radius: 10px;
-  background-color: rgb(237, 237, 234);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; /* Set a max-width for each card */
+  border-radius: 15px;  /* Rounded corners */
+  background-color: #2a2a2a;  /* Dark background for the card */
+  border: 2px solid #444;  /* Border with dark color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effects */
+  overflow: hidden;  /* Prevent content from overflowing */
+  position: relative; /* Positioning for content */
+  text-align: center; /* Center the text inside the card */
+  color: #fff;  /* Light text color for dark mode */
 }
 
+/* Hover effect for card */
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);  /* Hover effect to lift the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Hover shadow effect */
 }
 
-.card .role {
+/* Card Image */
+.card-img-top {
+  width: 100%;
+  height: auto; /* Fixed height for the image */
+  object-fit: cover;  /* Ensure the image covers the area without distortion */
+  object-position: center;  /* Center the image */
+  transition: transform 0.3s ease-in-out;  /* Smooth transition for zoom effect */
+}
+
+/* Hover effect on image */
+.card:hover .card-img-top {
+  transform: scale(1.1) rotateX(1.2);  /* Slight zoom effect on hover */
+  cursor: pointer;
+}
+
+/* Card Title */
+.card-title {
   font-size: 1.25rem;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #fff; /* Light title text */
 }
 
-.card li a {
-  margin-right: 0;
-  color: #333;
-  border-bottom: 2px solid #ffab40;
+/* Card Body */
+.card-body {
+  padding: 20px 15px;
+  background-color: #333;  /* Slightly darker background */
+  color: #fff; /* Light text color for readability */
 }
 
-.card li a:hover {
-  color: #333;
-  font-weight: 500;
+/* Card Text */
+.card-text {
+  font-size: 1rem;
+  color: #ccc; /* Lighter gray text for better contrast */
+  margin-top: 10px;
 }
 
-.card .card-content {
-  padding-bottom: 30px;
+/* Card Footer */
+.card-footer {
+  padding: 10px;
+  background-color: #2a2a2a;  /* Dark background for the footer */
+  border-top: 1px solid #444;  /* Dark border */
+  text-align: center;
 }
 
-.card .card-content p {
-  padding: 5px 0 0;
+/* Footer links */
+.card-footer a {
+  color: #007bff; /* Blue links */
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 
-.card h5 {
-  font-size: 1.75rem;
-  margin-bottom: -0.5rem;
-  margin-top: 2.25rem;
+.card-footer a:hover {
+  text-decoration: underline;
 }
 
-.card h6 {
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-top: 2rem;
-  text-transform: uppercase;
+/* Make the first card larger */
+.card:nth-child(1) {
+  grid-column: span 2; /* Make the first card span 2 columns */ /* Make the first card span 2 rows */
+}
+
+/* Make the fifth card larger */
+.card:nth-child(5) {
+  grid-column: span 2; /* Make the fifth card span 2 columns */ /* Make the fifth card span 2 rows */
+}
+
+/* Responsive Grid for Mobile */
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+
+  .card {
+    max-width: 100%;  /* Ensure the cards take up the full width on smaller screens */
+  }
+
+  .card-img-top {
+    height: 150px; /* Reduce the image height on mobile */
+  }
+
+  /* Reset the large card sizes for smaller screens */
+  .card:nth-child(1),
+  .card:nth-child(5) {
+    grid-column: span 1; /* Make sure the cards don't span multiple columns on mobile */
+    grid-row: span 1; /* Make sure the cards don't span multiple rows on mobile */
+  }
 }
 
 #experience .card-action {
@@ -590,6 +682,8 @@ h3 {
 
 .card .card-title {
   font-size: 24px;
+  font-weight: bolder;
+  color: rgb(1, 191, 36);
 }
 
 .card .card-content .card-title {
@@ -606,6 +700,7 @@ a.hoverline {
   transition: 0.25s all;
   -moz-transition: 0.25s all;
   -webkit-transition: 0.25s all;
+  color: rgb(154, 180, 247);
 }
 
 /* main a.hoverline */
@@ -828,6 +923,8 @@ small {
     position: relative;
     bottom: 15px;
   }
+
+ 
   #contact a:not(.btn-floating) {
     text-align: center;
     display: block;
@@ -842,4 +939,47 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+.grid-container {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 2px; /* Espacement entre les cartes */
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 3 / 2 / 4;}
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+
+/* Disposition mobile */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    grid-template-rows: auto;   /* Ajuste automatiquement la hauteur de chaque ligne */
+  }
+
+  .div1, .div2, .div3 {
+    grid-area: auto; /* Positionnement automatique en colonne */
+  }
+  .logo{
+    width: 500px;
+    text-align: center;
+  }
+}
+
+footer{
+  height: 100px;
+  text-align: center;
+  color: var(--PLblue);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: rgb(47, 255, 54);
 }

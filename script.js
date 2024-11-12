@@ -1,3 +1,13 @@
+function openBootstrapModal(img) {
+    var modalImage = document.getElementById("modal-image");
+    
+    // Set the modal image source to the clicked image's source
+    modalImage.src = img.src;
+    
+    // Open the modal
+    $('#imageModal').modal('show');
+  }
+
 window.addEventListener('load', function() {
     const loadingScreen = document.getElementById('loading-screen');
     const mainContent = document.getElementById('main-content');

@@ -531,7 +531,7 @@ h3 {
 /* Dark Mode Card Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  grid-template-columns: repeat(3, 2fr); /* Create 3 equal columns */
   gap: 20px; /* Add space between cards */
   padding: 20px; /* Padding around the grid */
   justify-items: center; /* Center cards in each grid item */
@@ -620,6 +620,10 @@ h3 {
   grid-column: span 2; /* Make the first card span 2 columns */ /* Make the first card span 2 rows */
 }
 
+.card:nth-child(4) {
+  grid-column: span 2; /* Make the fifth card span 2 columns */ /* Make the fifth card span 2 rows */
+}
+
 /* Make the fifth card larger */
 .card:nth-child(5) {
   grid-column: span 2; /* Make the fifth card span 2 columns */ /* Make the fifth card span 2 rows */
@@ -641,6 +645,7 @@ h3 {
 
   /* Reset the large card sizes for smaller screens */
   .card:nth-child(1),
+  .card:nth-child(4),
   .card:nth-child(5) {
     grid-column: span 1; /* Make sure the cards don't span multiple columns on mobile */
     grid-row: span 1; /* Make sure the cards don't span multiple rows on mobile */

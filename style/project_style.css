@@ -6,6 +6,7 @@ body,
 html {
   display: flex;
   justify-content: center;
+  background: url("/assets/img/bg.png");
 }
 
 iframe:not(.game) {
@@ -66,7 +67,8 @@ video {
 }
 
 .game-container {
-  display: flex;
+
+  
   width: 80%;
   max-width: 900px;
   height: 500px;
@@ -76,7 +78,9 @@ video {
 }
 
 .card#project{
-  width: 50vw;
+  display: flex;
+  align-items: center;
+  width: auto;
 }
 
 .project-description{
@@ -98,6 +102,78 @@ video {
   height: 90px;
 }
 
+
+footer{
+  margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+  color: var(--PLblue);
+}
+
+/* Image Grid Styles */
+.image-grid {
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  column-gap:  20px; /* Space between images */
+  margin-top: 20px;
+}
+
+.image-item img {
+  width: 100%; /* Make   images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for effect */
+}
+
+/* Optional: You can add hover effects for images */
+.image-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000; /* Make sure the close button is always on top */
+}
 @media (max-width: 768px) {
   .carousel {
     margin-left: 0;
@@ -107,11 +183,15 @@ video {
   .swiper .swiper-slide {
     width: 100%;
   }
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  }
 }
-
-footer{
-  margin-top: 100px;
-    margin-bottom: 70px;
-    text-align: center;
-  color: var(--PLblue);
+/* Media Query for Mobile (up to 480px wide) */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows */
+  }
 }

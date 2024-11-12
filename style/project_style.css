@@ -156,6 +156,10 @@ footer{
   margin-top: 20px;
 }
 
+.image-item:nth-child(7){
+  grid-column: span 3;
+}
+
 .image-item img {
   width: 100%; /* Make   images responsive */
   height: auto; /* Maintain aspect ratio */

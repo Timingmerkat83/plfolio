@@ -2,8 +2,8 @@
   --PLblue: rgb(3, 142, 241);
 }
 
-body,
-html {
+body:not(.detective),
+html:not(.detective) {
   display: flex;
   justify-content: center;
   background: url("/assets/img/bg.png");
@@ -27,14 +27,19 @@ iframe:not(.game) {
   width: 85%;
 }
 
+.Cyberlogo{
+  max-width: 700px;
+  min-width: 500px;
+}
+
 video {
   border-radius: 15px;
 }
 
 .carousel {
   overflow-x: hidden; /* Prevent horizontal overflow */
-  width: 90%; /* Ensure carousel takes full width */
-  margin-left: 86px; /* Adjust to the width of your side navbar if needed */
+  width: 100vw; /* Ensure carousel takes full width */
+
 }
 
 .swiper {
@@ -76,10 +81,25 @@ video {
   justify-content: center;
 }
 
+.align-competences{
+  display: flex;
+  flex-direction: row;
+}
 .card#project{
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: auto;
+  width: 35vw;
+}
+
+section.softwares{
+  display:flex;
+  justify-content: center;
+}
+
+section.project-logo{
+  display: flex;
+  justify-content: center;
 }
 
 .project-description{
@@ -191,8 +211,11 @@ footer{
     grid-template-rows: repeat(3, 1fr); /* 3 rows */
   }
 
-  img.title{
-    width: 100%;
+.title{
+   
+    display: flex;
+    justify-content: center;
+
   }
 }
 /* Media Query for Mobile (up to 480px wide) */
@@ -200,5 +223,61 @@ footer{
   .image-grid {
     grid-template-columns: 1fr; /* 1 column for mobile */
     grid-template-rows: repeat(6, 1fr); /* 6 rows */
+  }
+}
+
+.logo-tim h1 {
+  font-size: 3rem; /* Adjust size as needed */
+  text-align: center;
+  animation: logoAnimation 3s ease-out forwards;
+  opacity: 0; /* Start with invisible */
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+section img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInLogo 2s ease-in-out 1s forwards; /* Delay animation to wait for title animation */
+}
+
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-title {
+  animation: fadeInText 1.5s ease-out 1s forwards;
+  opacity: 0; /* Start hidden */
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

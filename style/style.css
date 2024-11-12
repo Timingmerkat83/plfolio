@@ -123,6 +123,7 @@ html {
   /* padding: 10px; */
 }
 
+
 .icon-btn {
   margin-left: auto;
   width: 50px;
@@ -424,7 +425,7 @@ li.logo span {
 }
 
 .container {
-  width: 95%;
+  width: 100vw;
 }
 
 h3 {
@@ -526,14 +527,6 @@ h3 {
   background-color: rgba(33, 150, 243, 0.2);
 }
 
-/* Main Container */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-  gap: 20px; /* Add space between cards */
-  padding: 20px; /* Padding around the grid */
-  justify-items: center; /* Center cards in each grid item */
-}
 
 /* Dark Mode Card Grid */
 .card-grid {
@@ -543,12 +536,12 @@ h3 {
   padding: 20px; /* Padding around the grid */
   justify-items: center; /* Center cards in each grid item */
   background-color: #181818;  /* Dark background for the grid */
+  border-radius: 1cm;
 }
 
 /* Card Styling */
 .card {
-  width: 100%;
-  max-width: 300px; /* Set a max-width for each card */
+  width: 100%; /* Set a max-width for each card */
   border-radius: 15px;  /* Rounded corners */
   background-color: #2a2a2a;  /* Dark background for the card */
   border: 2px solid #444;  /* Border with dark color */
@@ -569,7 +562,7 @@ h3 {
 /* Card Image */
 .card-img-top {
   width: 100%;
-  height: 180px; /* Fixed height for the image */
+  height: auto; /* Fixed height for the image */
   object-fit: cover;  /* Ensure the image covers the area without distortion */
   object-position: center;  /* Center the image */
   transition: transform 0.3s ease-in-out;  /* Smooth transition for zoom effect */
@@ -622,6 +615,16 @@ h3 {
   text-decoration: underline;
 }
 
+/* Make the first card larger */
+.card:nth-child(1) {
+  grid-column: span 2; /* Make the first card span 2 columns */ /* Make the first card span 2 rows */
+}
+
+/* Make the fifth card larger */
+.card:nth-child(5) {
+  grid-column: span 2; /* Make the fifth card span 2 columns */ /* Make the fifth card span 2 rows */
+}
+
 /* Responsive Grid for Mobile */
 @media (max-width: 767px) {
   .card-grid {
@@ -634,6 +637,13 @@ h3 {
 
   .card-img-top {
     height: 150px; /* Reduce the image height on mobile */
+  }
+
+  /* Reset the large card sizes for smaller screens */
+  .card:nth-child(1),
+  .card:nth-child(5) {
+    grid-column: span 1; /* Make sure the cards don't span multiple columns on mobile */
+    grid-row: span 1; /* Make sure the cards don't span multiple rows on mobile */
   }
 }
 
@@ -933,7 +943,7 @@ small {
 
 .grid-container {
   display: grid;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 2fr 1fr;

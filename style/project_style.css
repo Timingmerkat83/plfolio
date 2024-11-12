@@ -34,6 +34,9 @@ iframe:not(.game) {
 
 video {
   border-radius: 15px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .carousel {
@@ -113,6 +116,19 @@ section.project-logo{
 }
 .align-competences {
   text-align: center;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.video-container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .competence-img {

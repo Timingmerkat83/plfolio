@@ -67,11 +67,10 @@ video {
 }
 
 .game-container {
-
-  
+  margin: 30px;
+  display: flex;
   width: 80%;
   max-width: 900px;
-  height: 500px;
   min-width: 800px;
   align-items: center;
   justify-content: center;
@@ -161,7 +160,11 @@ footer{
 }
 
 
-
+.download-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .close-btn {
   position: absolute;
@@ -186,6 +189,10 @@ footer{
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
     grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  }
+
+  img.title{
+    width: 100%;
   }
 }
 /* Media Query for Mobile (up to 480px wide) */

@@ -14,7 +14,8 @@
         event: 'gtm.js'
       });
       var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j = d.createElement(s),
+        dl = l !== 'dataLayer' ? '&l=' + l : '';
       j.async = true;
       j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
@@ -36,7 +37,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
   </script>
@@ -149,8 +153,9 @@
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
-              <h2>Bonjour! <br><br>Je m'appelle <span class="teal"><span style="color:rgb(0, 77, 243)">P</span>ierre-<span
-                    style="color:rgb(2, 92, 201)">L</span>uc <span style="color:rgb(2, 92, 201)">P</span>roulx.</span>
+              <h2>Bonjour! <br><br>Je m'appelle <span class="teal"><span
+                    style="color:rgb(0, 77, 243)">P</span>ierre-<span style="color:rgb(2, 92, 201)">L</span>uc <span
+                    style="color:rgb(2, 92, 201)">P</span>roulx.</span>
               </h2>
               <h5 style="color:#fff">Un \> <span class="typing" style="font-weight: 300; color:#08ee36"> </span> </h5>
               <h5>Je suis *étudiant* dans le programme de technique d'intégration multimédia et je suis passionné de
@@ -233,7 +238,7 @@
             </div>
             <div class="card-footer">
               <small class="text-muted">Outils: Adobe Illustrator, PowerPoint, Adobe Photoshop</small>
-    
+
             </div>
           </div>
 
@@ -249,7 +254,7 @@
             </div>
           </div>
 
-        
+
 
           <!-- Card 4 -->
           <div class="card" onclick="window.location.href='project_html/LogoGagnant.html'">
@@ -262,17 +267,17 @@
             </div>
           </div>
 
-            <!-- Card 3 -->
-            <div class="card" onclick="window.location.href='project_html/Encretit.html'">
-              <img src="assets/img/projects/encretit.jpg" class="card-img-top" alt="Encretit" />
-              <div class="card-body">
-                <h5 class="card-title">Encretit</h5>
-                <p class="card-text">Projet de création d'un personnage 3D avec Maya</p>
-              </div>
-              <div class="card-footer">
-                <p class="text-muted">Outils: StoryBoarder, Maya</p>
-              </div>
+          <!-- Card 3 -->
+          <div class="card" onclick="window.location.href='project_html/Encretit.html'">
+            <img src="assets/img/projects/encretit.jpg" class="card-img-top" alt="Encretit" />
+            <div class="card-body">
+              <h5 class="card-title">Encretit</h5>
+              <p class="card-text">Projet de création d'un personnage 3D avec Maya</p>
             </div>
+            <div class="card-footer">
+              <p class="text-muted">Outils: StoryBoarder, Maya</p>
+            </div>
+          </div>
 
           <!-- Card 5 -->
           <div class="card" onclick="window.location.href='project_html/HommeMetro.html'">
@@ -298,8 +303,13 @@
             </div>
           </div>
         </div>
+        <!-- Button to see more projects -->
+        <div class="see-more center-align">
+          <a href="project_html/AllProjects.html" class="btn green">Voir plus de projets</a>
+        </div>
       </div>
     </section>
+    <br><br>
 
 
 
@@ -439,7 +449,10 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing', {
-      strings: ["Codeur", "Modéliseur", "Monteur", "Démonteur de pièces" ,"Développeur", "Designer UI/UX", "Animateur 2D", "Animateur 3D", "Analyste de données", "Dessinateur de cartoon", "Passionné de la technologie", "fou de café", "créateur de portfolio"],
+      strings: ["Codeur", "Modéliseur", "Monteur", "Démonteur de pièces", "Développeur", "Designer UI/UX",
+        "Animateur 2D", "Animateur 3D", "Analyste de données", "Dessinateur de cartoon",
+        "Passionné de la technologie", "fou de café", "créateur de portfolio"
+      ],
       loop: true,
       typeSpeed: 50,
       backSpeed: 40

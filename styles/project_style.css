@@ -9,6 +9,11 @@ html:not(.detective) {
   background: url("/assets/img/bg.png");
 }
 
+main {
+  background: url("../assets/img/bg.png") ;
+  padding-left: 190px;
+}
+
 iframe:not(.game) {
   width: 85vw;
   height: 80vh;

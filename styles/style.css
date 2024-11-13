@@ -326,7 +326,7 @@ nav i:hover {
 } */
 
 main {
-  background: url(../assets/img/bg.png) ;
+  background: url("../assets/img/bg.png") ;
   padding-left: 190px;
 }
 

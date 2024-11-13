@@ -41,7 +41,7 @@ video {
   border-radius: 15px;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+
 }
 
 .carousel {
@@ -131,8 +131,7 @@ section.project-logo{
 
 
 .video-container {
-  max-width: 100%;
-  width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 

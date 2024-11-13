@@ -96,17 +96,30 @@
 
         <section class="section">
             <h3 class="page-title center-align">Tous les Projets</h3>
-
             <!-- Category Filter Buttons -->
             <div class="filter-buttons center-align">
-                <button class="filter-btn" onclick="filterProjects('all')">Tous</button>
-                <button class="filter-btn" onclick="filterProjects('3d')">3D</button>
-                <button class="filter-btn" onclick="filterProjects('game')">Jeu</button>
-                <button class="filter-btn" onclick="filterProjects('2d')">2D</button>
-                <button class="filter-btn" onclick="filterProjects('animation')">Animation</button>
-                <button class="filter-btn" onclick="filterProjects('web')">Web</button>
-                <button class="filter-btn" onclick="filterProjects('PS')">Photo Montage</button>
-            </div>
+                <button class="filter-btn" onclick="filterProjects('all')">
+                  <i class="fas fa-th-large"></i> Tous
+                </button>
+                <button class="filter-btn" onclick="filterProjects('3d')">
+                  <i class="fas fa-cube"></i> 3D
+                </button>
+                <button class="filter-btn" onclick="filterProjects('2d')">
+                  <i class="fas fa-image"></i> 2D
+                </button>
+                <button class="filter-btn" onclick="filterProjects('animation')">
+                  <i class="fas fa-film"></i> Animation
+                </button>
+                <button class="filter-btn" onclick="filterProjects('game')">
+                  <i class="fas fa-gamepad"></i> Jeu
+                </button>
+                <button class="filter-btn" onclick="filterProjects('web')">
+                  <i class="fas fa-laptop-code"></i> Web
+                </button>
+                <button class="filter-btn" onclick="filterProjects('PS')">
+                  <i class="fas fa-image"></i> Photo Montage
+                </button>
+              </div>
 
             <!-- Projects Grid -->
             <div class="project-grid">
@@ -157,6 +170,16 @@
                     <img src="../assets/img/projects/presidentperil.PNG" alt="Project 9">
                     <h5>Président en péril</h5>
                     <p>Jeu web interactif</p>
+                </div>
+                <div class="project-card web"  onclick="window.location.href='CyberDetective.html'">
+                    <img src="../assets/img/projects/FirstLife.PNG" alt="Project 10">
+                    <h5>First Life</h5>
+                    <p>Création de Page Web</p>
+                </div>
+                <div class="project-card animation 3d"  onclick="window.location.href='silencecouleur.html'">
+                    <img src="../assets/img/projects/SilenceCouleur.PNG" alt="Project 11">
+                    <h5>Silence de couleur.</h5>
+                    <p>Animation 3D</p>
                 </div>
 
 

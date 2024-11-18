@@ -9,7 +9,79 @@
     body,
     html {
       background-color: rgb(56, 56, 56);
+      margin: 0;
+      padding: 0;
     }
+
+    .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #da66bb;
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+        .highlight {
+            color: #d74b4b;
+            font-weight: bold;
+        }
+        .mission {
+          display: flex;
+          flex-direction: column;
+            background-color: #6b747a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .mission h3 {
+            margin: 0;
+            color: #145799;
+            font-weight: bolder;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 30px;
+        }
+
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .mission {
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .mission {
+                padding: 10px;
+            }
+        }
   </style>
   <!-- Google Tag Manager -->
   <script>
@@ -29,7 +101,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
   </script>
   <!-- End Google Tag Manager -->
-   
+
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -101,24 +173,19 @@
           class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>À Propos</span></a>
       </li>
       <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="/index.html#projects"
           class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projets</span></a>
       </li>
-
       <li class="bold">
         <a aria-label="Navigate to the Skills section" href="/index.html#skills"
           class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Compétences</span></a>
       </li>
       <li class="bold">
-
         <a aria-label="Navigate to the Contact section" href="/index.html#contact"
           class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
-
       <li class="bold">
         <a aria-label="Open Varad's resume in a new tab"
           href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view?usp=drive_link" target="_blank"
@@ -168,18 +235,20 @@
   </nav>
   <main>
     <section>
-      
+
       <img class="logo" src="../assets/img/projects/Option de tuer/optiontuer.png" width="1000">
     </section>
     <section>
       <iframe src="https://timingmerkat83.github.io/Vous-etes-le-heros-Option-de-tuer/" title="Option de tuer">
       </iframe>
       <p>
-        <a aria-label="Voir le projet sur github" href="https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer" target="_blank"
-          data-position="top" data-tooltip="Voir Option de tuer sur GitHub"
+        <a aria-label="Voir le projet sur github"
+          href="https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer" target="_blank" data-position="top"
+          data-tooltip="Voir Option de tuer sur GitHub"
           class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
             aria-label="Projet Github" href="https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer"
-            class="hoverline" style="color: rgb(6, 104, 252)" target="_blank">https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer</a></a>
+            class="hoverline" style="color: rgb(6, 104, 252)"
+            target="_blank">https://github.com/Timingmerkat83/Vous-etes-le-heros-Option-de-tuer</a></a>
       </p>
     </section>
     <section>
@@ -187,24 +256,38 @@
         <h3 class="page-title white-text orange">Description</h3>
         <div class="project-description">
           <div class="container flow-text">
-          <p>
-            Histoire web intéractif: Vous incarnez Bonnie Parker, jeune agente maladroite mais talentueuse, cherche à
-            venger la mort de
-            ses parents en traquant le Professeur Crâne, un criminel menaçant des millions de vies. Elle reçoit une
-            mission cruciale : le retrouver et décider de son sort. Partagée entre la vengeance et la justice, Bonnie
-            doit
-            affronter ses démons pour sauver des innocents.
-          </p>
-          <br>
-          <h4>Inspiration</h4>
-          <ul>
-            <li>
-              - Le jeu Henry Stickmin
-            </li>
-            <li>
+            <div class="container">
+              <h1>Histoire Web Interactive : Bonnie Parker</h1>
+              <p>
+                Vous incarnez <span class="highlight">Bonnie Parker</span>, jeune agente maladroite mais talentueuse,
+                cherchant à venger la mort de ses parents en traquant le <span class="highlight">Professeur
+                  Crâne</span>,
+                un criminel menaçant des millions de vies.
+              </p>
+              <p>
+                Elle reçoit une mission cruciale : le retrouver et décider de son sort. Partagée entre la vengeance et
+                la justice,
+                Bonnie doit affronter ses démons pour sauver des innocents.
+              </p>
+              <div class="mission">
+                <h3>Mission du jour :</h3>
+                <p>Retrouver le Professeur Crâne et choisir entre la justice ou la vengeance.</p>
+              </div>
+              <div class="footer">
+                <p>© 2024 Histoire Interactive. Tous droits réservés.</p>
+              </div>
+            </div>
+            <div class="container">
+            <h4>Inspiration</h4>
+            <ul>
+              <li>
+                - Le jeu Henry Stickmin
+              </li>
+              <li>
 
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
           <div class="card" id="project">
             <div class="card-content">

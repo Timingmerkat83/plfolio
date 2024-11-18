@@ -25,6 +25,10 @@ iframe:not(.game) {
   margin: 16px;
 }
 
+
+section{
+  margin-bottom: 8rem;
+}
 .tools_container {
   display: flex;
   align-items: center;
@@ -39,14 +43,31 @@ iframe:not(.game) {
 
 video {
   border-radius: 15px;
-  width: 100%;
-  height: auto;
+  width: 100%; /* La vidéo occupe 100% de la largeur de son conteneur */
+  height: auto; /* Garde les proportions de la vidéo */
   margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .video {
+      padding: 10px; /* Réduit le padding sur les petits écrans */
+  }
+  video {
+      margin-bottom: 15px; /* Réduit la marge sous la vidéo */
+  }
+}
+
+@media (max-width: 480px) {
+  video {
+      margin-bottom: 10px; /* Réduit la marge pour les très petits écrans */
+  }
 }
 
 .carousel {
   overflow-x: hidden; /* Prevent horizontal overflow */
-  width: 100vw; /* Ensure carousel takes full width */
+  width: 100%; /* Ensure carousel takes full width */
 
 }
 
@@ -57,7 +78,6 @@ video {
 }
 
 .swiper .swiper-slide {
-  width: 1080px; /* You can adjust this value as per your requirement */
   flex-shrink: 0; /* Prevent slide from shrinking */
   max-width: 100%; /* Prevent slide from exceeding available space */
 }
@@ -73,7 +93,7 @@ video {
 
 .single img {
   width: 100%;
-  height: auto;
+  height: 25%;
   vertical-align: top;
   border-radius: 8px;
   pointer-events: none;
@@ -97,7 +117,12 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35vw;
+  max-width: 50vw;
+}
+
+.description-container{
+  display: flex;
+  flex-direction: column;
 }
 
 section.softwares{

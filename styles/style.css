@@ -318,6 +318,8 @@ nav i:hover {
   color: white;
 }
 
+
+
 /* main */
 
 /* main {
@@ -867,6 +869,7 @@ small {
     position: fixed;
     top: 0;
     z-index: 2;
+    background-color: gray;
   }
   .name-title {
     display: block;

@@ -11,7 +11,6 @@ html:not(.detective) {
 
 main {
   background: url("../assets/img/bg.png") ;
-  padding-left: 190px;
 }
 
 iframe:not(.game) {
@@ -65,21 +64,21 @@ video {
   }
 }
 
+/* Carrousel */
 .carousel {
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  width: 100%; /* Ensure carousel takes full width */
-
+  overflow-x: hidden; /* Empêche le débordement horizontal */
+  width: 100%; /* S'assure que le carrousel prend toute la largeur */
 }
 
 .swiper {
   overflow: visible;
-  width: 100vw;
-  margin-left: 0; /* Ensure no unwanted margin */
+  width: 100vw; /* S'assure que le swiper prend toute la largeur de la fenêtre */
+  margin-left: 0; /* Aucun margin gauche non désiré */
 }
 
 .swiper .swiper-slide {
-  flex-shrink: 0; /* Prevent slide from shrinking */
-  max-width: 100%; /* Prevent slide from exceeding available space */
+  flex-shrink: 0; /* Empêche le slide de rétrécir */
+  max-width: 100%; /* Empêche que le slide dépasse la largeur disponible */
 }
 
 .single {
@@ -89,14 +88,62 @@ video {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  overflow: hidden; /* S'assurer qu'aucun contenu ne déborde du cadre */
 }
 
 .single img {
-  width: 100%;
-  height: 25%;
+  width: 100%; /* S'assure que l'image prend toute la largeur du conteneur */
+  height: auto; /* Maintient la proportion de l'image */
   vertical-align: top;
   border-radius: 8px;
   pointer-events: none;
+}
+
+/* Responsivité pour les petits écrans (Tablettes, Smartphones) */
+@media (max-width: 1024px) {
+  .swiper {
+    width: 100%; /* Réduit la largeur à 100% sur les écrans plus petits */
+  }
+
+  .single {
+    max-width: 100%; /* Réduit la largeur des éléments à 100% sur les petits écrans */
+  }
+
+  .single img {
+    height: auto; /* Garde l'aspect ratio de l'image pour les petits écrans */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Pour les tablettes et petits écrans */
+  .swiper {
+    width: 100vw; /* Utilise toute la largeur de la fenêtre pour les petits écrans */
+  }
+
+  .swiper .swiper-slide {
+    max-width: 100%; /* Les slides prennent 100% de la largeur du conteneur */
+  }
+
+  .single {
+    margin: 0 10px; /* Ajoute un peu d'espace entre les images */
+    box-shadow: none; /* On peut réduire ou enlever le box-shadow pour un meilleur rendu mobile */
+  }
+
+  .single img {
+    height: auto; /* Garantit que l'image conserve ses proportions */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Pour les très petits écrans (smartphones) */
+  .swiper {
+    width: 100vw; /* Utilise toute la largeur de l'écran */
+  }
+
+  .single img {
+    height: 100%; /* L'image occupe toute la hauteur de son conteneur (si besoin) */
+    object-fit: cover; /* L'image remplit le conteneur sans déformation */
+  }
 }
 
 .game-container {

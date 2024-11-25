@@ -530,6 +530,8 @@ h3 {
 }
 
 
+
+
 /* Dark Mode Card Grid */
 .card-grid {
   display: grid;
@@ -544,7 +546,7 @@ h3 {
 /* Card Styling */
 .card {
   width: 100%; /* Set a max-width for each card */
-  border-radius: 15px;  /* Rounded corners */
+  border-radius: 8px;  /* Rounded corners */
   background-color: #2a2a2a;  /* Dark background for the card */
   border: 2px solid #444;  /* Border with dark color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
@@ -557,7 +559,7 @@ h3 {
 
 /* Hover effect for card */
 .card:hover {
-  transform: translateY(-5px);  /* Hover effect to lift the card */
+  transform: translateY(-10px);  /* Hover effect to lift the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Hover shadow effect */
 }
 
@@ -578,7 +580,7 @@ h3 {
 
 /* Card Title */
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-top: 15px;
   font-weight: bold;
   color: #fff; /* Light title text */
@@ -594,8 +596,12 @@ h3 {
 /* Card Text */
 .card-text {
   font-size: 1rem;
-  color: #ccc; /* Lighter gray text for better contrast */
+  color: #616161; /* Lighter gray text for better contrast */
   margin-top: 10px;
+}
+
+.card-action small {
+  color: #9e9e9e; /* Light gray */
 }
 
 /* Card Footer */

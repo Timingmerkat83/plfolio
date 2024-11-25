@@ -1,639 +1,1009 @@
 <!-- <!DOCTYPE html> -->
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l !== "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PGZH8HT");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Materialize - Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/LogoPL.ico" />
+    <!-- Font Awesome Icon - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-5ZCD5uc+t7jY5c+76y0jR6xreKg0/MaS8lLRWTOk4h/DKT5I5eyEzPsTInb3k9lQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Pierre-Luc Proulx | Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-126939217-2");
+    </script>
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pierre-Luc | Software Developer" />
+    <meta property="og:description" content="Software Developer" />
+    <!-- Meta information -->
+    <meta name="author" content="Pierre-Luc Proulx" />
+    <meta
+      name="description"
+      content="Software Developer with a passion for backend development and artificial intelligence."
+    />
+    <!-- Favicon for Apple and Android devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/img/favicon/android-icon-192x192.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta
+      name="google-site-verification"
+      content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"
+    />
+  </head>
+
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+    <!-- Navigation Menu-->
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+          <a
+            id="logo-container"
+            aria-label="Navigate to the beginning of the page"
+            href="#intro"
+            class="brand-logo grey-blue-text"
+          >
+            <img
+              src="assets/img/PL.JPG"
+              class="circle img-responsive profile-pic"
+              alt="avatar"
+            />
+          </a>
+        </li>
+
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>À Propos</span></a
+          >
+        </li>
+
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark teal-text collapsible-header tooltipped"
+            data-tooltip="Explore various projects"
+          >
+            <i class="mdi-av-my-library-books small"></i>
+            <span>Projets</span>
+          </a>
+          <!-- Sub-navigation for Projects -->
+          <ul class="collapsible-body">
+            <li>
+              <a
+                href="project_html/CyberDetective.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open Cyber Detective project"
+                data-tooltip="View the Cyber Detective project details"
+              >
+                Cyber Detective
+              </a>
+            </li>
+            <li>
+              <a
+                href="project_html/DrunkZombieSurvivor.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open Drunk Zombie Survivor project"
+                data-tooltip="View the Drunk Zombie Survivor project details"
+              >
+                Drunk Zombie Survivor
+              </a>
+            </li>
+            <li>
+              <a
+                href="project_html/HommeMetro.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open L'homme du métro project"
+                data-tooltip="View L'homme du métro project details"
+              >
+                L'homme du métro
+              </a>
+            </li>
+            <li>
+              <a
+                href="project_html/Encretit.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open Encretit project"
+                data-tooltip="View the Encretit project details"
+              >
+                Encretit
+              </a>
+            </li>
+            <li>
+              <a
+                href="project_html/LogoGagnant.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open Logo Tim project"
+                data-tooltip="View the Logo Tim project details"
+              >
+                Logo Tim
+              </a>
+            </li>
+            <li>
+              <a
+                href="project_html/OptionTuer.html"
+                class="waves-effect waves-dark teal-text tooltipped"
+                aria-label="Open Option de tuer project"
+                data-tooltip="View the Option de tuer project details"
+              >
+                Option de tuer
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Skills section"
+            href="#skills"
+            class="waves-effect waves-yellow teal-text"
+            ><i class="mdi-action-assessment small"></i
+            ><span>Compétences</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          >
+        </li>
+
+        <li class="bold">
+          <a
+            aria-label="Open Varad's resume in a new tab"
+            href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view?usp=drive_link"
+            target="_blank"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-file-folder-open small"></i><span>CV</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a
+        aria-label="Toggle visibility of the mobile navbar"
+        href="#"
+        data-activates="slide-out"
+        class="button-collapse"
+        ><i class="mdi-navigation-menu"></i
+      ></a>
+      <div class="name-title">
+        <a
+          id="name"
+          aria-label="Navigate to the beginning of the page"
+          href="#"
+          class="teal-text"
+          >Pierre-Luc Proulx</a
+        ><span class="black-text"
+          >Étudiant Technique d'intégration Multimédia</span
+        >
+      </div>
+    </nav>
+
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>À Propos</span></a
+          >
+        </li>
+
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark teal-text collapsible-header"
+            ><i class="mdi-av-my-library-books small"></i
+            ><span>Projets</span></a
+          >
+          <!-- Sub-navigation for Projects -->
+          <ul class="collapsible-body">
+            <li>
+              <a
+                href="project_html/CyberDetective.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open Cyber Detective project"
+                >Cyber Detective</a
+              >
+            </li>
+            <li>
+              <a
+                href="project_html/DrunkZombieSurvivor.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open Drunk Zombie Survivor project"
+                >Drunk Zombie Survivor</a
+              >
+            </li>
+            <li>
+              <a
+                href="project_html/HommeMetro.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open L'homme du métro project"
+                >L'homme du métro</a
+              >
+            </li>
+            <li>
+              <a
+                href="project_html/Encretit.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open Encretit project"
+                >Encretit</a
+              >
+            </li>
+            <li>
+              <a
+                href="project_html/LogoGagnant.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open Logo Tim project"
+                >Logo Tim</a
+              >
+            </li>
+            <li>
+              <a
+                href="project_html/OptionTuer.html"
+                class="waves-effect waves-dark teal-text"
+                aria-label="Open Option de tuer project"
+                >Option de tuer</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Skills section"
+            href="#skills"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-action-assessment small"></i
+            ><span>Compétences</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-content-mail small"></i><span>Contacter</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Open Pierre-Luc Proulx Resume in a new tab"
+            href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view"
+            target="_blank"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-file-folder-open small"></i><span>CV</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content-->
+    <main>
+      <!-- First Section: Heading lines and image -->
+      <section id="intro" class="section scrollspy full-height" style="position: relative;">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="col-md-9">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2 style="font-size: 2.5rem;">
+                  Bonjour! <br /><br />Je m'appelle
+                  <span class="teal">
+                    <span style="color: rgb(0, 77, 243)">P</span>ierre-<span style="color: rgb(2, 92, 201)">L</span>uc
+                    <span style="color: rgb(2, 92, 201)">P</span>roulx.
+                  </span>
+                </h2>
+                <h5 style="color: #fff; font-weight: 300; letter-spacing: 1px;">
+                  Un \>
+                  <span class="typing" style="font-weight: 300; color: #08ee36"></span>
+                </h5>
+                <h5 style="color: #fff; font-size: 1.2rem;">
+                  Je suis *étudiant* dans le programme de technique d'intégration multimédia et je suis passionné de
+                  codage, animation 3D et 2D.
+                </h5>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank">
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/Timingmerkat83" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+                <a href="https://ca.pinterest.com/Pierreskate14/" target="_blank">
+                  <button class="icon-btn pinterest">
+                    <i class="fa fa-pinterest"></i>
+                  </button>
+                </a>
+                <a href="https://www.behance.net/pierre-proulx1" target="_blank">
+                  <button class="icon-btn behance">
+                    <i class="fa fa-behance"></i>
+                  </button>
+                </a>
+                <a href="https://www.facebook.com/CallmePL2001/" target="_blank">
+                  <button class="icon-btn facebook">
+                    <i class="fa fa-facebook"></i>
+                  </button>
+                </a>
+                <a href="https://vimeo.com/user46064266" target="_blank">
+                  <button class="icon-btn vimeo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-vimeo"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              <div class="buttons">
+                <a href="#about" class="readme btn waves-effect waves-light ">Lire Plus</a>
+                <a href="#contact" class="contactme btn waves-effect waves-light ">Me contacter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section: About -->
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text center-align blue">À propos</h3>
+        <div class="container flow-text">
+          <p>
+            En tant qu’<strong>étudiant</strong> en
+            <em>Technique d'intégration multimédia</em> au
+            <strong>Collège Montmorency</strong>, j'ai développé une large gamme
+            de compétences créatives et
+            <span style="color: #ff6347">techniques</span>. Mon parcours, mêlant
+            <strong>codage</strong>, <em>animation 2D/3D</em> et création
+            d’<strong>expériences immersives</strong>, m’a permis de travailler
+            sur des projets <em>interactifs</em> et
+            <span style="color: #4682b4">enrichissants</span>. Passionné par le
+            <strong>design visuel</strong> et la
+            <strong>programmation front-end</strong>, je cherche toujours à
+            apprendre de nouvelles
+            <span style="color: #32cd32">technologies</span> et à résoudre des
+            <span style="color: #ff8c00">défis créatifs</span>.
+          </p>
+          <p>
+            Aujourd'hui, je suis à la recherche d'une opportunité où je pourrais
+            <strong>mettre mes compétences</strong> au service de projets
+            innovants et continuer à
+            <span style="color: #b16af3; font-weight: bolder"
+              >évoluer professionnellement</span
+            >.
+          </p>
+        </div>
+      </section>
+      <!-- Fourth Section: Projects -->
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text green center-align">Projets</h3>
+        <div class="container">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col s12 m6 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Voir le projet Cyber Détective"
+                data-position="top"
+                onclick="window.location.href='project_html/CyberDetective.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Voir le projet Cyber Détective"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/CyberDetective.png"
+                    alt="Image du projet Cyber Détective"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">Cyber Détective</h5>
+                  <p class="card-text">
+                    Projet de générique de film d'introduction avec Adobe
+                    Photoshop
+                  </p>
+                </div>
+                <div class="card-action">
+                  <small class="text-muted"
+                    >Outils: Adobe Illustrator, PowerPoint, Adobe
+                    Photoshop</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col s12 m6 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Explorer l'histoire interactive Option de tuer"
+                data-position="top"
+                onclick="window.location.href='project_html/OptionTuer.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Explorer l'histoire interactive Option de tuer"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/decision de tuer.png"
+                    alt="Image du projet Option de tuer"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">Option de tuer</h5>
+                  <p class="card-text">Histoire interactive Web</p>
+                </div>
+                <div class="card-action">
+                  <small class="text-muted"
+                    >Outils: HTML, CSS, Javascript, GitHub</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col s12 m12 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Voir le logo gagnant TIM"
+                data-position="top"
+                onclick="window.location.href='project_html/LogoGagnant.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Voir le logo gagnant TIM"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/Logo timFinal.png"
+                    alt="Image du logo TIM gagnant"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">Logo TIM gagnant</h5>
+                  <p class="card-text">
+                    Concours de conception de logo du programme TIM (Logo
+                    gagnant)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col s12 m6 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Voir le projet Encretit (création 3D)"
+                data-position="top"
+                onclick="window.location.href='project_html/Encretit.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Voir le projet Encretit"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/encretit.jpg"
+                    alt="Image du projet Encretit"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">Encretit</h5>
+                  <p class="card-text">
+                    Projet de création d'un personnage 3D avec Maya
+                  </p>
+                </div>
+                <div class="card-action">
+                  <small class="text-muted">Outils: StoryBoarder, Maya</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col s12 m6 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Voir l'animation 2D L'homme du métro"
+                data-position="top"
+                onclick="window.location.href='project_html/HommeMetro.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Voir l'animation 2D L'homme du métro"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/hommemetro.png"
+                    alt="Image du projet L'homme du métro"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">L'homme du métro</h5>
+                  <p class="card-text">
+                    Une animation 2D dans un style pixel avec After Effects
+                  </p>
+                </div>
+                <div class="card-action">
+                  <small class="text-muted"
+                    >Outils: After Effects, Adobe, StoryBoarder, Adobe
+                    Illustrator</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col s12 m12 l4">
+              <div
+                class="card hoverable tooltipped"
+                data-tooltip="Jouer à Drunk Zombie Survivor"
+                data-position="top"
+                onclick="window.location.href='project_html/DrunkZombieSurvivor.html'"
+                tabindex="0"
+                role="button"
+                aria-label="Jouer à Drunk Zombie Survivor"
+              >
+                <div class="card-image">
+                  <img
+                    src="assets/img/projects/zombiedrunk.gif"
+                    alt="Image du projet Drunk Zombie Survivor"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="card-title truncate">Drunk Zombie Survivor</h5>
+                  <p class="card-text">Jeux 3D réalisé avec Unity</p>
+                </div>
+                <div class="card-action">
+                  <small class="text-muted"
+                    >Tirer sur des zombies tout en collectant de la bière</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button to see more projects -->
+          <div class="see-more center-align">
+            <a href="project_html/AllProjects.html" class="btn green"
+              >Voir plus de projets</a
+            >
+          </div>
+        </div>
+      </section>
+      <br /><br />
+
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text center-align purple">Compétences</h3>
+        <div class="container">
+          <!-- Display Grid -->
+          <div class="row">
+            <!-- Languages and Databases Card -->
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-content">
+                  <h4 class="white-text light center-align">
+                    Langages et Bases de Données
+                  </h4>
+                  <div class="row">
+                    <div class="col s4">
+                      <img
+                        alt="HTML5"
+                        src="assets/img/html5.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">HTML5</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="CSS3"
+                        src="assets/img/css3.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">CSS3</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="JavaScript"
+                        src="assets/img/javascript.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="MySQL"
+                        src="assets/img/mysql-logo-1-300x300.jpg"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">MySQL</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="SASS"
+                        src="assets/img/sass.svg"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">SASS</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Bootstrap"
+                        src="assets/img/bootstrap.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Bootstrap</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="C++"
+                        src="assets/img/c-plus-plus.svg"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">C++</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="C#"
+                        src="assets/img/c-sharp.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">C#</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Software Card -->
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-content">
+                  <h4 class="white-text light center-align">Logiciels</h4>
+                  <div class="row">
+                    <div class="col s4">
+                      <img
+                        alt="VS Code"
+                        src="assets/img/vscode.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">VS Code</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Photoshop"
+                        src="assets/img/photoshop.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Photoshop</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Illustrator"
+                        src="assets/img/illustrator.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Illustrator</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="After Effects"
+                        src="assets/img/aftereffects.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">After Effects</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Premiere Pro"
+                        src="assets/img/premiere.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Premiere Pro</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Touch Designer"
+                        src="assets/img/TouchDesigner.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Touch Designer</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="Maya"
+                        src="assets/img/maya.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Maya</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="DaVinci Resolve"
+                        src="assets/img/davinci.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">DaVinci Resolve</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="Unity"
+                        src="assets/img/unity.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Unity</p>
+                    </div>
+                    <div class="col s6">
+                      <img
+                        alt="Blender"
+                        src="assets/img/blender.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Blender</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Tools Card -->
+            <div class="col s12 m12 l4">
+              <div class="card hoverable">
+                <div class="card-content">
+                  <h4 class="white-text light center-align">Autres</h4>
+                  <div class="row">
+                    <div class="col s4">
+                      <img
+                        alt="Git"
+                        src="assets/img/git.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Git</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Node.js"
+                        src="assets/img/nodejs.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Node.js</p>
+                    </div>
+                    <div class="col s4">
+                      <img
+                        alt="Heroku"
+                        src="assets/img/heroku.png"
+                        class="responsive-img skill-icon"
+                      />
+                      <p class="skill-name">Heroku</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Eight Section: Contact -->
+      <section id="contact" class="section scrollspy" style="height: 50vh">
+        <h3 class="page-title white-text orange-text center-align Orange">
+          Contactez-moi
+        </h3>
+        <div class="container">
+          <div class="row">
+            <!-- Phone -->
+            <div class="col s12 m6 l3 center-align contact-card">
+              <a
+                aria-label="Appelle PL"
+                href="tel:+1-514-812-0569"
+                data-position="top"
+                data-tooltip="Appelle PL"
+                class="btn-floating btn-large waves-effect waves-light blue-grey darken-3 tooltipped scale-on-hover"
+              >
+                <i class="fa fa-phone"></i>
+              </a>
+              <p class="contact-text hoverline">
+                <a href="tel:+1-514-812-0569" class="white-text"
+                  >+1-(514)-812-0569</a
+                >
+              </p>
+            </div>
+
+            <!-- Email -->
+            <div class="col s12 m6 l3 center-align contact-card">
+              <a
+                aria-label="Email PL"
+                href="mailto:pierrelucproulx@gmail.com"
+                data-position="top"
+                data-tooltip="Envoyer un email à PL"
+                class="btn-floating btn-large waves-effect waves-light teal tooltipped scale-on-hover"
+              >
+                <i class="fa fa-envelope"></i>
+              </a>
+              <p class="contact-text hoverline">
+                <a href="mailto:pierrelucproulx@gmail.com" class="white-text"
+                  >pierrelucproulx@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col s12 m6 l3 center-align contact-card">
+              <a
+                aria-label="Voir PL sur GitHub"
+                href="https://github.com/Timingmerkat83?tab=repositories"
+                target="_blank"
+                data-position="top"
+                data-tooltip="Voir PL sur GitHub"
+                class="btn-floating btn-large waves-effect waves-light black tooltipped scale-on-hover"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+              <p class="contact-text hoverline">
+                <a
+                  href="https://github.com/Timingmerkat83?tab=repositories"
+                  target="_blank"
+                  class="white-text"
+                  >Profil Github</a
+                >
+              </p>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="col s12 m6 l3 center-align contact-card">
+              <a
+                aria-label="Voir PL sur LinkedIn"
+                href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/"
+                target="_blank"
+                data-position="top"
+                data-tooltip="Voir PL sur LinkedIn"
+                class="btn-floating btn-large waves-effect waves-light blue tooltipped scale-on-hover"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <p class="contact-text hoverline">
+                <a
+                  href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/"
+                  target="_blank"
+                  class="white-text"
+                  >Profil Indeed</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="padding-top: 40px">
+      <p>&copy Pierre-Luc Proulx 2024</p>
+    </footer>
+
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: [
+          "Codeur",
+          "Modéliseur",
+          "Monteur",
+          "Démonteur de pièces",
+          "Développeur",
+          "Designer UI/UX",
+          "Animateur 2D",
+          "Animateur 3D",
+          "Analyste de données",
+          "Dessinateur de cartoon",
+          "Passionné de la technologie",
+          "fou de café",
+          "créateur de portfolio",
+        ],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 40,
       });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l !== 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Materialize - Compiled and minified CSS -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/LogoPL.ico">
-  <!-- Font Awesome Icon - CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-5ZCD5uc+t7jY5c+76y0jR6xreKg0/MaS8lLRWTOk4h/DKT5I5eyEzPsTInb3k9lQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <title>Pierre-Luc Proulx | Portfolio</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    </script>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-126939217-2');
-  </script>
-  <!-- Open Graph -->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pierre-Luc | Software Developer" />
-  <meta property="og:description" content="Software Developer" />
-  <!-- Meta information -->
-  <meta name="author" content="Pierre-Luc Proulx" />
-  <meta name="description"
-    content="Software Developer with a passion for backend development and artificial intelligence." />
-  <!-- Favicon for Apple and Android devices -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head>
-
-<body>
-
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <script src="script.js"></script>
-  <script src="navbar.js"></script>
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="assets/img/PL.JPG" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>À Propos</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects"
-          class="waves-effect waves-dark teal-text collapsible-header tooltipped"
-          data-tooltip="Explore various projects">
-          <i class="mdi-av-my-library-books small"></i>
-          <span>Projets</span>
-        </a>
-        <!-- Sub-navigation for Projects -->
-        <ul class="collapsible-body">
-          <li>
-            <a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open Cyber Detective project" data-tooltip="View the Cyber Detective project details">
-              Cyber Detective
-            </a>
-          </li>
-          <li>
-            <a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open Drunk Zombie Survivor project"
-              data-tooltip="View the Drunk Zombie Survivor project details">
-              Drunk Zombie Survivor
-            </a>
-          </li>
-          <li>
-            <a href="project_html/HommeMetro.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open L'homme du métro project" data-tooltip="View L'homme du métro project details">
-              L'homme du métro
-            </a>
-          </li>
-          <li>
-            <a href="project_html/Encretit.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open Encretit project" data-tooltip="View the Encretit project details">
-              Encretit
-            </a>
-          </li>
-          <li>
-            <a href="project_html/LogoGagnant.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open Logo Tim project" data-tooltip="View the Logo Tim project details">
-              Logo Tim
-            </a>
-          </li>
-          <li>
-            <a href="project_html/OptionTuer.html" class="waves-effect waves-dark teal-text tooltipped"
-              aria-label="Open Option de tuer project" data-tooltip="View the Option de tuer project details">
-              Option de tuer
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-yellow teal-text"><i
-            class="mdi-action-assessment small"></i><span>Compétences</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Open Varad's resume in a new tab"
-          href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view?usp=drive_link" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>CV</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Pierre-Luc
-        Proulx</a><span class="black-text">Étudiant Technique d'intégration Multimédia</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>À Propos</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects"
-          class="waves-effect waves-dark teal-text collapsible-header"><i
-            class="mdi-av-my-library-books small"></i><span>Projets</span></a>
-        <!-- Sub-navigation for Projects -->
-        <ul class="collapsible-body">
-          <li><a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open Cyber Detective project">Cyber Detective</a></li>
-          <li><a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open Drunk Zombie Survivor project">Drunk Zombie Survivor</a></li>
-          <li><a href="project_html/HommeMetro.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open L'homme du métro project">L'homme du métro</a></li>
-          <li><a href="project_html/Encretit.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open Encretit project">Encretit</a></li>
-          <li><a href="project_html/LogoGagnant.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open Logo Tim project">Logo Tim</a></li>
-          <li><a href="project_html/OptionTuer.html" class="waves-effect waves-dark teal-text"
-              aria-label="Open Option de tuer project">Option de tuer</a></li>
-        </ul>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Compétences</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contacter</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Pierre-Luc Proulx Resume in a new tab"
-          href="https://drive.google.com/file/d/1pxmDFmQ243p4ravfpPyy6uUchRYI4w1_/view" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>CV</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Bonjour! <br><br>Je m'appelle <span class="teal"><span
-                    style="color:rgb(0, 77, 243)">P</span>ierre-<span style="color:rgb(2, 92, 201)">L</span>uc <span
-                    style="color:rgb(2, 92, 201)">P</span>roulx.</span>
-              </h2>
-              <h5 style="color:#fff">Un \> <span class="typing" style="font-weight: 300; color:#08ee36"> </span> </h5>
-              <h5>Je suis *étudiant* dans le programme de technique d'intégration multimédia et je suis passionné de
-                codage, animation 3D et 2D</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/Timingmerkat83" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <a href="https://ca.pinterest.com/Pierreskate14/" target="_blank">
-                <button class="icon-btn pinterest">
-                  <i class="fa fa-pinterest"></i>
-                </button>
-              </a>
-              <a href="https://www.behance.net/pierre-proulx1" target="_blank">
-                <button class="icon-btn behance">
-                  <i class="fa fa-behance"></i>
-                </button>
-              </a>
-              <a href="https://www.facebook.com/CallmePL2001/" target="_blank">
-                <button class="icon-btn facebook">
-                  <i class="fa fa-facebook"></i>
-                </button>
-              </a>
-              <a href="https://vimeo.com/user46064266" target="_blank">
-                <button class="icon-btn vimeo">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-vimeo"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z" />
-                  </svg>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Lire Plus</a>
-              <a href="#contact" class="contactme">Me contacter</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text blue">À propos</h3>
-      <div class="container flow-text">
-        <p> En tant qu’<strong>étudiant</strong> en <em>Technique d'intégration multimédia</em> au <strong>Collège
-            Montmorency</strong>, j'ai développé une large gamme de compétences créatives et <span
-            style="color: #ff6347;">techniques</span>. Mon parcours, mêlant <strong>codage</strong>, <em>animation
-            2D/3D</em> et création d’<strong>expériences immersives</strong>, m’a permis de travailler sur des projets
-          <em>interactifs</em> et <span style="color: #4682b4;">enrichissants</span>. Passionné par le <strong>design
-            visuel</strong> et la <strong>programmation front-end</strong>, je cherche toujours à apprendre de nouvelles
-          <span style="color: #32cd32;">technologies</span> et à résoudre des <span style="color: #ff8c00;">défis
-            créatifs</span>. </p>
-        <p> Aujourd'hui, je suis à la recherche d'une opportunité où je pourrais <strong>mettre mes compétences</strong>
-          au service de projets innovants et continuer à <span style="color: #b16af3; font-weight: bolder;">évoluer
-            professionnellement</span>. </p>
-      </div>
-    </section>
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text green center-align">Projets</h3>
-      <div class="container">
-        <div class="row">
-
-          <!-- Card 1 -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Voir le projet Cyber Détective" data-position="top"
-              onclick="window.location.href='project_html/CyberDetective.html'" tabindex="0" role="button"
-              aria-label="Voir le projet Cyber Détective">
-              <div class="card-image">
-                <img src="assets/img/projects/CyberDetective.png" alt="Image du projet Cyber Détective"
-                  class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">Cyber Détective</h5>
-                <p class="card-text">Projet de générique de film d'introduction avec Adobe Photoshop</p>
-              </div>
-              <div class="card-action">
-                <small class="text-muted">Outils: Adobe Illustrator, PowerPoint, Adobe Photoshop</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Explorer l'histoire interactive Option de tuer"
-              data-position="top" onclick="window.location.href='project_html/OptionTuer.html'" tabindex="0"
-              role="button" aria-label="Explorer l'histoire interactive Option de tuer">
-              <div class="card-image">
-                <img src="assets/img/projects/decision de tuer.png" alt="Image du projet Option de tuer"
-                  class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">Option de tuer</h5>
-                <p class="card-text">Histoire interactive Web</p>
-              </div>
-              <div class="card-action">
-                <small class="text-muted">Outils: HTML, CSS, Javascript, GitHub</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col s12 m12 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Voir le logo gagnant TIM" data-position="top"
-              onclick="window.location.href='project_html/LogoGagnant.html'" tabindex="0" role="button"
-              aria-label="Voir le logo gagnant TIM">
-              <div class="card-image">
-                <img src="assets/img/projects/Logo timFinal.png" alt="Image du logo TIM gagnant"
-                  class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">Logo TIM gagnant</h5>
-                <p class="card-text">Concours de conception de logo du programme TIM (Logo gagnant)</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Voir le projet Encretit (création 3D)"
-              data-position="top" onclick="window.location.href='project_html/Encretit.html'" tabindex="0" role="button"
-              aria-label="Voir le projet Encretit">
-              <div class="card-image">
-                <img src="assets/img/projects/encretit.jpg" alt="Image du projet Encretit" class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">Encretit</h5>
-                <p class="card-text">Projet de création d'un personnage 3D avec Maya</p>
-              </div>
-              <div class="card-action">
-                <small class="text-muted">Outils: StoryBoarder, Maya</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Voir l'animation 2D L'homme du métro"
-              data-position="top" onclick="window.location.href='project_html/HommeMetro.html'" tabindex="0"
-              role="button" aria-label="Voir l'animation 2D L'homme du métro">
-              <div class="card-image">
-                <img src="assets/img/projects/hommemetro.png" alt="Image du projet L'homme du métro"
-                  class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">L'homme du métro</h5>
-                <p class="card-text">Une animation 2D dans un style pixel avec After Effects</p>
-              </div>
-              <div class="card-action">
-                <small class="text-muted">Outils: After Effects, Adobe, StoryBoarder, Adobe Illustrator</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col s12 m12 l4">
-            <div class="card hoverable tooltipped" data-tooltip="Jouer à Drunk Zombie Survivor" data-position="top"
-              onclick="window.location.href='project_html/DrunkZombieSurvivor.html'" tabindex="0" role="button"
-              aria-label="Jouer à Drunk Zombie Survivor">
-              <div class="card-image">
-                <img src="assets/img/projects/zombiedrunk.gif" alt="Image du projet Drunk Zombie Survivor"
-                  class="responsive-img" />
-              </div>
-              <div class="card-content">
-                <h5 class="card-title truncate">Drunk Zombie Survivor</h5>
-                <p class="card-text">Jeux 3D réalisé avec Unity</p>
-              </div>
-              <div class="card-action">
-                <small class="text-muted">Tirer sur des zombies tout en collectant de la bière</small>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- Button to see more projects -->
-        <div class="see-more center-align">
-          <a href="project_html/AllProjects.html" class="btn green">Voir plus de projets</a>
-        </div>
-      </div>
-    </section>
-    <br><br>
-
-
-
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text purple-text purple">Compétences</h3>
-      <div class="container">
-
-        <!-- Display Grid -->
-        <div class="row">
-
-          <!-- Languages and Databases Card -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-content">
-                <h4 class="white-text light center-align">Langages et Bases de Données</h4>
-                <div class="row">
-                  <div class="col s4">
-                    <img alt="HTML5" src="assets/img/html5.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">HTML5</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="CSS3" src="assets/img/css3.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">CSS3</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="JavaScript" src="assets/img/javascript.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">JavaScript</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="MySQL" src="assets/img/mysql-logo-1-300x300.jpg" class="responsive-img skill-icon" />
-                    <p class="skill-name">MySQL</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="SASS" src="assets/img/sass.svg" class="responsive-img skill-icon" />
-                    <p class="skill-name">SASS</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Bootstrap" src="assets/img/bootstrap.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Bootstrap</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="C++" src="assets/img/c-plus-plus.svg" class="responsive-img skill-icon" />
-                    <p class="skill-name">C++</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="C#" src="assets/img/c-sharp.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">C#</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Software Card -->
-          <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-content">
-                <h4 class="white-text light center-align">Logiciels</h4>
-                <div class="row">
-                  <div class="col s4">
-                    <img alt="VS Code" src="assets/img/vscode.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">VS Code</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Photoshop" src="assets/img/photoshop.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Photoshop</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Illustrator" src="assets/img/illustrator.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Illustrator</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="After Effects" src="assets/img/aftereffects.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">After Effects</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Premiere Pro" src="assets/img/premiere.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Premiere Pro</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Touch Designer" src="assets/img/TouchDesigner.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Touch Designer</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="Maya" src="assets/img/maya.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Maya</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="DaVinci Resolve" src="assets/img/davinci.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">DaVinci Resolve</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="Unity" src="assets/img/unity.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Unity</p>
-                  </div>
-                  <div class="col s6">
-                    <img alt="Blender" src="assets/img/blender.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Blender</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Other Tools Card -->
-          <div class="col s12 m12 l4">
-            <div class="card hoverable">
-              <div class="card-content">
-                <h4 class="white-text light center-align">Autres</h4>
-                <div class="row">
-                  <div class="col s4">
-                    <img alt="Git" src="assets/img/git.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Git</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Node.js" src="assets/img/nodejs.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Node.js</p>
-                  </div>
-                  <div class="col s4">
-                    <img alt="Heroku" src="assets/img/heroku.png" class="responsive-img skill-icon" />
-                    <p class="skill-name">Heroku</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text orange-text  Orange">Contactez-moi</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Phone -->
-          <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Appelle PL" href="tel:+1-514-812-0569" data-position="top" data-tooltip="Appelle PL"
-              class="btn-floating btn-large waves-effect waves-light blue-grey darken-3 tooltipped scale-on-hover">
-              <i class="fa fa-phone"></i>
-            </a>
-            <p class="contact-text hoverline">
-              <a href="tel:+1-514-812-0569" class="white-text">+1-(514)-812-0569</a>
-            </p>
-          </div>
-
-          <!-- Email -->
-          <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Email PL" href="mailto:pierrelucproulx@gmail.com" data-position="top"
-              data-tooltip="Envoyer un email à PL"
-              class="btn-floating btn-large waves-effect waves-light teal tooltipped scale-on-hover">
-              <i class="fa fa-envelope"></i>
-            </a>
-            <p class="contact-text hoverline">
-              <a href="mailto:pierrelucproulx@gmail.com" class="white-text">pierrelucproulx@gmail.com</a>
-            </p>
-          </div>
-
-          <!-- GitHub -->
-          <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Voir PL sur GitHub" href="https://github.com/Timingmerkat83?tab=repositories" target="_blank"
-              data-position="top" data-tooltip="Voir PL sur GitHub"
-              class="btn-floating btn-large waves-effect waves-light black tooltipped scale-on-hover">
-              <i class="fa fa-github"></i>
-            </a>
-            <p class="contact-text hoverline">
-              <a href="https://github.com/Timingmerkat83?tab=repositories" target="_blank" class="white-text">GitHub
-                Profile</a>
-            </p>
-          </div>
-
-          <!-- LinkedIn -->
-          <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Voir PL sur LinkedIn" href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/"
-              target="_blank" data-position="top" data-tooltip="Voir PL sur LinkedIn"
-              class="btn-floating btn-large waves-effect waves-light blue tooltipped scale-on-hover">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <p class="contact-text hoverline">
-              <a href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank"
-                class="white-text">LinkedIn Profile</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p> &copy Pierre-Luc Proulx 2024</p>
-  </footer>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Codeur", "Modéliseur", "Monteur", "Démonteur de pièces", "Développeur", "Designer UI/UX",
-        "Animateur 2D", "Animateur 3D", "Analyste de données", "Dessinateur de cartoon",
-        "Passionné de la technologie", "fou de café", "créateur de portfolio"
-      ],
-      loop: true,
-      typeSpeed: 50,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-</body>
-
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      });
+    </script>
+  </body>
 </html>

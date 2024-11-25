@@ -22,7 +22,23 @@ window.addEventListener('load', function() {
     }, 500); // Wait for the fade-out to finish
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const tooltips = document.querySelectorAll('.tooltipped');
-    M.Tooltip.init(tooltips);
-  });
+
+$(function () {
+	var filterList = {
+		init: function () {
+			// MixItUp plugin
+			// http://mixitup.io
+			$('.portfolio-grid').mixItUp({
+				selectors: {
+  			  target: '.portfolio',
+  			  filter: '.filter'	
+  		  },
+  		  load: {
+    		  filter: 'all' // show app tab on first load
+    		}     
+			});								
+		}
+	};
+	// Run the show!
+	filterList.init();
+});	

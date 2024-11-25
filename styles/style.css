@@ -863,6 +863,18 @@ small {
     height: 56px;
     line-height: 56px;
   }
+
+  .collapsible-body li a:hover {
+    color: #004d40; /* Dark teal shade */
+    font-weight: bold;
+  }
+
+  .collapsible-body li a.active {
+    color: #004d40; /* Dark teal */
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
   h3 {
     padding: 20px 30px;
     margin-bottom: 40px;

@@ -214,7 +214,7 @@ html {
 
 .readme {
   position: relative;
-  padding: 11px 35px;
+  padding: 16px 35px;
   background: #fff;
   color: #005179;
   border: 2px solid #fff;
@@ -222,7 +222,7 @@ html {
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-border-radius: 5px;
 }
 
@@ -233,7 +233,7 @@ html {
 
 .contactme {
   position: relative;
-  padding: 11px 35px;
+  padding: 16px 35px;
   background: none;
   color: #fff;
   border: 2px solid #fff;
@@ -242,7 +242,7 @@ html {
   letter-spacing: 1px;
   display: inline-block;
   margin-top: 1.5em;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-border-radius: 5px;
 }
 
@@ -853,7 +853,7 @@ small {
   }
   nav a.button-collapse,
   nav a.button-collapse i {
-    color: #7462ff;
+    color: #6704a0;
     height: 56px;
     line-height: 56px;
   }
@@ -991,3 +991,38 @@ footer{
 footer p {
   color: rgb(47, 255, 54);
 }
+
+/* Contact Section Styling */
+
+
+.contact-text {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.contact-text a {
+  color: #ffcc80;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.contact-text a:hover {
+  color: #ffab40;
+  text-decoration: underline;
+}
+
+/* Scale on Hover for Icons */
+.scale-on-hover {
+  transition: transform 0.3s ease;
+}
+.scale-on-hover:hover {
+  transform: scale(1.2);
+}
+
+/* Tooltip Style */
+.tooltipped {
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+

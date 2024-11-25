@@ -21,3 +21,8 @@ window.addEventListener('load', function() {
         mainContent.style.display = 'block';
     }, 500); // Wait for the fade-out to finish
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltips = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(tooltips);
+  });

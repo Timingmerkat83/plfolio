@@ -546,7 +546,7 @@ h3 {
 /* Card Styling */
 .card {
   width: 100%; /* Set a max-width for each card */
-  border-radius: 8px;  /* Rounded corners */
+  border-radius: 20px;  /* Rounded corners */
   background-color: #2a2a2a;  /* Dark background for the card */
   border: 2px solid #444;  /* Border with dark color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
@@ -589,7 +589,7 @@ h3 {
 /* Card Body */
 .card-body {
   padding: 20px 15px;
-  background-color: #333;  /* Slightly darker background */
+  background-color: #464646;  /* Slightly darker background */
   color: #fff; /* Light text color for readability */
 }
 

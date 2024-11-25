@@ -14,7 +14,8 @@
         event: 'gtm.js'
       });
       var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j = d.createElement(s),
+        dl = l !== 'dataLayer' ? '&l=' + l : '';
       j.async = true;
       j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
@@ -36,7 +37,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
   </script>
@@ -87,8 +91,10 @@
         </a>
         <!-- Sub-navigation for Projects -->
         <ul class="sub-nav">
-          <li><a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text">Cyber Detective</a></li>
-          <li><a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text">Drunk Zombie Survivor</a></li>
+          <li><a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text">Cyber Detective</a>
+          </li>
+          <li><a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text">Drunk Zombie
+              Survivor</a></li>
           <li><a href="project_html/HommeMetro.html" class="waves-effect waves-dark teal-text">L'homme du metro</a></li>
           <li><a href="project_html/Encretit.html" class="waves-effect waves-dark teal-text">Encretit</a></li>
           <li><a href="project_html/LogoGagnant.html" class="waves-effect waves-dark teal-text">Logo Tim</a></li>
@@ -133,10 +139,12 @@
       <li class="bold">
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projets</span></a>
-             <!-- Sub-navigation for Projects -->
+        <!-- Sub-navigation for Projects -->
         <ul class="sub-nav">
-          <li><a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text">Cyber Detective</a></li>
-          <li><a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text">Drunk Zombie Survivor</a></li>
+          <li><a href="project_html/CyberDetective.html" class="waves-effect waves-dark teal-text">Cyber Detective</a>
+          </li>
+          <li><a href="project_html/DrunkZombieSurvivor.html" class="waves-effect waves-dark teal-text">Drunk Zombie
+              Survivor</a></li>
           <li><a href="project_html/HommeMetro.html" class="waves-effect waves-dark teal-text">L'homme du metro</a></li>
           <li><a href="project_html/Encretit.html" class="waves-effect waves-dark teal-text">Encretit</a></li>
           <li><a href="project_html/LogoGagnant.html" class="waves-effect waves-dark teal-text">Logo Tim</a></li>
@@ -168,8 +176,9 @@
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
-              <h2>Bonjour! <br><br>Je m'appelle <span class="teal"><span style="color:rgb(0, 77, 243)">P</span>ierre-<span
-                    style="color:rgb(2, 92, 201)">L</span>uc <span style="color:rgb(2, 92, 201)">P</span>roulx.</span>
+              <h2>Bonjour! <br><br>Je m'appelle <span class="teal"><span
+                    style="color:rgb(0, 77, 243)">P</span>ierre-<span style="color:rgb(2, 92, 201)">L</span>uc <span
+                    style="color:rgb(2, 92, 201)">P</span>roulx.</span>
               </h2>
               <h5 style="color:#fff">Un \> <span class="typing" style="font-weight: 300; color:#08ee36"> </span> </h5>
               <h5>Je suis *étudiant* dans le programme de technique d'intégration multimédia et je suis passionné de
@@ -243,15 +252,18 @@
       <h3 class="page-title white-text green center-align">Projets</h3>
       <div class="container">
         <div class="row">
-    
+
           <!-- Card 1 -->
           <div class="col s12 m6 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/CyberDetective.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Voir le projet Cyber Détective" data-position="top"
+              onclick="window.location.href='project_html/CyberDetective.html'" tabindex="0" role="button"
+              aria-label="Voir le projet Cyber Détective">
               <div class="card-image">
-                <img src="assets/img/projects/CyberDetective.png" alt="Cyber Detective" />
+                <img src="assets/img/projects/CyberDetective.png" alt="Image du projet Cyber Détective"
+                  class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">Cyber Détective</h5>
+                <h5 class="card-title truncate">Cyber Détective</h5>
                 <p class="card-text">Projet de générique de film d'introduction avec Adobe Photoshop</p>
               </div>
               <div class="card-action">
@@ -259,15 +271,18 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Card 2 -->
           <div class="col s12 m6 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/OptionTuer.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Explorer l'histoire interactive Option de tuer"
+              data-position="top" onclick="window.location.href='project_html/OptionTuer.html'" tabindex="0"
+              role="button" aria-label="Explorer l'histoire interactive Option de tuer">
               <div class="card-image">
-                <img src="assets/img/projects/decision de tuer.png" alt="Option de tuer" />
+                <img src="assets/img/projects/decision de tuer.png" alt="Image du projet Option de tuer"
+                  class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">Option de tuer</h5>
+                <h5 class="card-title truncate">Option de tuer</h5>
                 <p class="card-text">Histoire interactive Web</p>
               </div>
               <div class="card-action">
@@ -275,28 +290,33 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Card 3 -->
           <div class="col s12 m12 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/LogoGagnant.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Voir le logo gagnant TIM" data-position="top"
+              onclick="window.location.href='project_html/LogoGagnant.html'" tabindex="0" role="button"
+              aria-label="Voir le logo gagnant TIM">
               <div class="card-image">
-                <img src="assets/img/projects/Logo timFinal.png" alt="Logo TIM" />
+                <img src="assets/img/projects/Logo timFinal.png" alt="Image du logo TIM gagnant"
+                  class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">Logo TIM gagnant</h5>
+                <h5 class="card-title truncate">Logo TIM gagnant</h5>
                 <p class="card-text">Concours de conception de logo du programme TIM (Logo gagnant)</p>
               </div>
             </div>
           </div>
-    
+
           <!-- Card 4 -->
           <div class="col s12 m6 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/Encretit.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Voir le projet Encretit (création 3D)"
+              data-position="top" onclick="window.location.href='project_html/Encretit.html'" tabindex="0" role="button"
+              aria-label="Voir le projet Encretit">
               <div class="card-image">
-                <img src="assets/img/projects/encretit.jpg" alt="Encretit" />
+                <img src="assets/img/projects/encretit.jpg" alt="Image du projet Encretit" class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">Encretit</h5>
+                <h5 class="card-title truncate">Encretit</h5>
                 <p class="card-text">Projet de création d'un personnage 3D avec Maya</p>
               </div>
               <div class="card-action">
@@ -304,15 +324,18 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Card 5 -->
           <div class="col s12 m6 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/HommeMetro.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Voir l'animation 2D L'homme du métro"
+              data-position="top" onclick="window.location.href='project_html/HommeMetro.html'" tabindex="0"
+              role="button" aria-label="Voir l'animation 2D L'homme du métro">
               <div class="card-image">
-                <img src="assets/img/projects/hommemetro.png" alt="Homme du metro" />
+                <img src="assets/img/projects/hommemetro.png" alt="Image du projet L'homme du métro"
+                  class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">L'homme du metro</h5>
+                <h5 class="card-title truncate">L'homme du métro</h5>
                 <p class="card-text">Une animation 2D dans un style pixel avec After Effects</p>
               </div>
               <div class="card-action">
@@ -320,15 +343,18 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Card 6 -->
           <div class="col s12 m12 l4">
-            <div class="card hoverable" onclick="window.location.href='project_html/DrunkZombieSurvivor.html'">
+            <div class="card hoverable tooltipped" data-tooltip="Jouer à Drunk Zombie Survivor" data-position="top"
+              onclick="window.location.href='project_html/DrunkZombieSurvivor.html'" tabindex="0" role="button"
+              aria-label="Jouer à Drunk Zombie Survivor">
               <div class="card-image">
-                <img src="assets/img/projects/zombiedrunk.gif" alt="Drunk Zombie Survivor" />
+                <img src="assets/img/projects/zombiedrunk.gif" alt="Image du projet Drunk Zombie Survivor"
+                  class="responsive-img" />
               </div>
               <div class="card-content">
-                <h5 class="card-title">Drunk Zombie Survivor</h5>
+                <h5 class="card-title truncate">Drunk Zombie Survivor</h5>
                 <p class="card-text">Jeux 3D réalisé avec Unity</p>
               </div>
               <div class="card-action">
@@ -336,20 +362,20 @@
               </div>
             </div>
           </div>
-    
+
         </div>
       </div>
     </section>
-    
+
 
 
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text purple-text purple">Compétences</h3>
       <div class="container">
-    
+
         <!-- Display Grid -->
         <div class="row">
-    
+
           <!-- Languages and Databases Card -->
           <div class="col s12 m6 l4">
             <div class="card hoverable">
@@ -392,7 +418,7 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Software Card -->
           <div class="col s12 m6 l4">
             <div class="card hoverable">
@@ -443,7 +469,7 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Other Tools Card -->
           <div class="col s12 m12 l4">
             <div class="card hoverable">
@@ -466,11 +492,11 @@
               </div>
             </div>
           </div>
-    
+
         </div>
       </div>
     </section>
-    
+
     <!-- Eight Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text orange-text  Orange">Contactez-moi</h3>
@@ -478,45 +504,50 @@
         <div class="row">
           <!-- Phone -->
           <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Appelle PL" href="tel:+1-514-812-0569" data-position="top" 
-              data-tooltip="Appelle PL" class="btn-floating btn-large waves-effect waves-light blue-grey darken-3 tooltipped scale-on-hover">
+            <a aria-label="Appelle PL" href="tel:+1-514-812-0569" data-position="top" data-tooltip="Appelle PL"
+              class="btn-floating btn-large waves-effect waves-light blue-grey darken-3 tooltipped scale-on-hover">
               <i class="fa fa-phone"></i>
             </a>
             <p class="contact-text hoverline">
               <a href="tel:+1-514-812-0569" class="white-text">+1-(514)-812-0569</a>
             </p>
           </div>
-    
+
           <!-- Email -->
           <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Email PL" href="mailto:pierrelucproulx@gmail.com" data-position="top" 
-              data-tooltip="Envoyer un email à PL" class="btn-floating btn-large waves-effect waves-light teal tooltipped scale-on-hover">
+            <a aria-label="Email PL" href="mailto:pierrelucproulx@gmail.com" data-position="top"
+              data-tooltip="Envoyer un email à PL"
+              class="btn-floating btn-large waves-effect waves-light teal tooltipped scale-on-hover">
               <i class="fa fa-envelope"></i>
             </a>
             <p class="contact-text hoverline">
               <a href="mailto:pierrelucproulx@gmail.com" class="white-text">pierrelucproulx@gmail.com</a>
             </p>
           </div>
-    
+
           <!-- GitHub -->
           <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Voir PL sur GitHub" href="https://github.com/Timingmerkat83?tab=repositories" target="_blank" 
-              data-position="top" data-tooltip="Voir PL sur GitHub" class="btn-floating btn-large waves-effect waves-light black tooltipped scale-on-hover">
+            <a aria-label="Voir PL sur GitHub" href="https://github.com/Timingmerkat83?tab=repositories" target="_blank"
+              data-position="top" data-tooltip="Voir PL sur GitHub"
+              class="btn-floating btn-large waves-effect waves-light black tooltipped scale-on-hover">
               <i class="fa fa-github"></i>
             </a>
             <p class="contact-text hoverline">
-              <a href="https://github.com/Timingmerkat83?tab=repositories" target="_blank" class="white-text">GitHub Profile</a>
+              <a href="https://github.com/Timingmerkat83?tab=repositories" target="_blank" class="white-text">GitHub
+                Profile</a>
             </p>
           </div>
-    
+
           <!-- LinkedIn -->
           <div class="col s12 m6 l3 center-align contact-card">
-            <a aria-label="Voir PL sur LinkedIn" href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank" 
-              data-position="top" data-tooltip="Voir PL sur LinkedIn" class="btn-floating btn-large waves-effect waves-light blue tooltipped scale-on-hover">
+            <a aria-label="Voir PL sur LinkedIn" href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/"
+              target="_blank" data-position="top" data-tooltip="Voir PL sur LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue tooltipped scale-on-hover">
               <i class="fa fa-linkedin"></i>
             </a>
             <p class="contact-text hoverline">
-              <a href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank" class="white-text">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/pierre-luc-proulx-a0a6b01a2/" target="_blank"
+                class="white-text">LinkedIn Profile</a>
             </p>
           </div>
         </div>
@@ -531,7 +562,10 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing', {
-      strings: ["Codeur", "Modéliseur", "Monteur", "Démonteur de pièces" ,"Développeur", "Designer UI/UX", "Animateur 2D", "Animateur 3D", "Analyste de données", "Dessinateur de cartoon", "Passionné de la technologie", "fou de café", "créateur de portfolio"],
+      strings: ["Codeur", "Modéliseur", "Monteur", "Démonteur de pièces", "Développeur", "Designer UI/UX",
+        "Animateur 2D", "Animateur 3D", "Analyste de données", "Dessinateur de cartoon",
+        "Passionné de la technologie", "fou de café", "créateur de portfolio"
+      ],
       loop: true,
       typeSpeed: 50,
       backSpeed: 40

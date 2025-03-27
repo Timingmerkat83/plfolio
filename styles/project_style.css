@@ -452,3 +452,10 @@ section img {
     padding: 15px;
   }
 }
+
+.metroman{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

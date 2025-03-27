@@ -1,5 +1,8 @@
 :root{
-  --PLblue: rgb(3, 142, 241);
+  --PLblue: rgb(0, 128, 255); /* Primary blue color */
+  --lightblue: rgb(173, 216, 230); /* Lighter blue for hover effects */
+  --darkblue: rgb(0, 72, 144); /* Darker blue for contrasts */
+  --lightgray: rgb(211, 211, 211); /* Light gray for text */
   --darkgray: rgb(30, 30, 30);
 }
 
@@ -14,12 +17,17 @@ html {
 
 .icon-btn:hover {
   transform: scale(1.1);
-  background-color: #04a3a3;
+  background-color: var(--PLblue); /* Primary blue color */
 }
 
 .btn-large {
   font-size: 1.2rem;
   padding: 15px 30px;
+  background-color: var(--PLblue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  
 }
 
 .caption h2 {
@@ -28,11 +36,12 @@ html {
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-size: 3rem;
+  color: var(--PLblue);
 }
 
 .caption h5 {
   font-family: 'Verdana', sans-serif;
-  color: #fff;
+  color: var(--lightgray); /* Light gray for subtitle */
   font-size: 1.2rem;
 }
 
@@ -42,6 +51,7 @@ html {
 
 .social button:hover {
   transform: translateY(-5px);
+  
 }
 
 /* Media Queries for Responsiveness */

@@ -164,7 +164,9 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50vw;
+  width: 75%;
+  max-width: 65vw;
+ 
 }
 
 .description-container{
@@ -375,5 +377,78 @@ section img {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4a90e2;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* General paragraph styling */
+.intro, .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+/* Highlight styling */
+.highlight {
+  color: #e94e77;  /* A vibrant pinkish red for emphasis */
+  font-weight: bold;
+}
+
+/* Mission section styling */
+.mission {
+  display: flex;          /* Flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items at the start (top) */
+  justify-content: flex-start; /* Ensure content stays at the top */
+  background-color: #6b747a;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  max-width: 700px;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mission title styling */
+.mission-title {
+  font-size: 1.8rem;
+  color: #2d3e50;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Mission description styling */
+.mission-description {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .intro, .description {
+    font-size: 1rem;
+  }
+  .mission {
+    padding: 15px;
   }
 }

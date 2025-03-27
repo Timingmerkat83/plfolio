@@ -1,0 +1,78 @@
+/* Styling for Team Section */
+.team {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 75%; /* Make the card take 75% of the screen width */
+    margin-left: auto;  /* Centers the card horizontally */
+    margin-right: auto; /* Centers the card horizontally */
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .team h4 {
+    font-size: 1.8rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 2px solid #4a90e2; /* Add border around the icons */
+  }
+
+  .team-member:hover .team-icon {
+    transform: scale(1.5); /* Scale the image by 1.2x when hovered */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for dynamic effect */
+  }
+
+  .team-member a:hover p {
+    color: #4a90e2; /* Change text color on hover */
+  }
+  
+  .team-icon-container {
+    margin-bottom: 10px;  /* Adds some space between the icon and the name */
+  }
+  .team-member p {
+    font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+  transition: color 0.3s ease;
+  }
+  .team-member a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1106,20 +1106,55 @@ footer p {
 /* Contact Section Styling */
 
 
-.contact-text {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: #ffffff;
+/* Ensuring the contact-list is displayed as a row with Flexbox */
+.contact-list {
+  display: flex;
+  justify-content: space-evenly;  /* Ensures cards are evenly spaced */
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+/* Ensuring each contact card is styled well and keeps a good layout */
+.contact-card {
+  display:flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  margin: 10px;
+  text-align: center;
+  flex: 0 1 250px; /* Shrinks, allows flexibility, but bases at 150px */
+  max-width: 200px; /* Max width to ensure the cards don't become too large */
+}
+
+/* If you want to limit the size of the contact cards */
+.contact-card a {
+  display: inline-block;
+  margin: 10px 0;
+}
+
 .contact-text a {
-  color: #ffcc80;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
-.contact-text a:hover {
-  color: #ffab40;
-  text-decoration: underline;
+
+
+
+/* Responsive Design: For smaller screens, reduce the contact cards' width */
+@media (max-width: 768px) {
+  .contact-card {
+    flex: 0 1 45%; /* Adjust to 2 items per row on smaller screens */
+    max-width: 250px; /* Limit the maximum width of the cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    flex: 0 1 100%; /* Stacks the items vertically on extra small screens */
+    max-width: 100%; /* Ensures the cards don't get wider than their container */
+  }
 }
 
 /* Scale on Hover for Icons */

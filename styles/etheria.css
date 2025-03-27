@@ -76,3 +76,30 @@
     }
   }
   
+  .etheria {
+    text-align: center; /* Center the image horizontally */
+    width: 100%;  /* Ensure the container takes up the full width */
+    padding: 20px; /* Optional padding to create space around the image */
+  }
+  
+  /* Make the image responsive */
+  .etheria img {
+    width: 100%;  /* Ensure the image scales down as the container shrinks */
+    max-width: 1000px;  /* Set a max-width for the image to prevent it from growing too large */
+    height: auto;  /* Maintain aspect ratio of the image */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto;  /* Center the image horizontally */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .etheria img {
+      max-width: 90%; /* Allow image to be slightly smaller on smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .etheria img {
+      max-width: 80%; /* Further reduce size on very small screens */
+    }
+  }

@@ -459,3 +459,15 @@ section img {
   font-weight: 600;
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .title img {
+    max-width: 90%; /* Allow image to be slightly smaller on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .title img {
+    max-width: 80%; /* Further reduce size on very small screens */
+  }
+}
